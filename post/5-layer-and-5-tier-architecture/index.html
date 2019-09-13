@@ -18,6 +18,7 @@
 
 <meta name="author" content="cemal" /><meta name="description" content="There are differences between N-layer and N-tier definitions. We can start with explaining those first:
 5-layer Architecture Layering is logical separation that you implement in your application. It has a relation with N-Tier but we will move onto it later:
+
 Presentation This is how your application is shown to the user. You can think about it is a look and feel of the application. But it is very similar to the UI layer, today&amp;rsquo;s world with the improvement of JavaScript (client-side-rendering solutions like React, Angular, etc." /><meta name="keywords" content="Hugo, theme, even" />
 
 
@@ -43,6 +44,7 @@ Presentation This is how your application is shown to the user. You can think ab
 <meta property="og:title" content="5 Layer and 5 Tier Architecture" />
 <meta property="og:description" content="There are differences between N-layer and N-tier definitions. We can start with explaining those first:
 5-layer Architecture Layering is logical separation that you implement in your application. It has a relation with N-Tier but we will move onto it later:
+
 Presentation This is how your application is shown to the user. You can think about it is a look and feel of the application. But it is very similar to the UI layer, today&rsquo;s world with the improvement of JavaScript (client-side-rendering solutions like React, Angular, etc." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://cemalonder.comc/post/5-layer-and-5-tier-architecture/" />
@@ -51,6 +53,7 @@ Presentation This is how your application is shown to the user. You can think ab
 <meta itemprop="name" content="5 Layer and 5 Tier Architecture">
 <meta itemprop="description" content="There are differences between N-layer and N-tier definitions. We can start with explaining those first:
 5-layer Architecture Layering is logical separation that you implement in your application. It has a relation with N-Tier but we will move onto it later:
+
 Presentation This is how your application is shown to the user. You can think about it is a look and feel of the application. But it is very similar to the UI layer, today&rsquo;s world with the improvement of JavaScript (client-side-rendering solutions like React, Angular, etc.">
 
 
@@ -65,6 +68,7 @@ Presentation This is how your application is shown to the user. You can think ab
 <meta name="twitter:title" content="5 Layer and 5 Tier Architecture"/>
 <meta name="twitter:description" content="There are differences between N-layer and N-tier definitions. We can start with explaining those first:
 5-layer Architecture Layering is logical separation that you implement in your application. It has a relation with N-Tier but we will move onto it later:
+
 Presentation This is how your application is shown to the user. You can think about it is a look and feel of the application. But it is very similar to the UI layer, today&rsquo;s world with the improvement of JavaScript (client-side-rendering solutions like React, Angular, etc."/>
 
 <!--[if lte IE 9]>
@@ -176,7 +180,7 @@ Presentation This is how your application is shown to the user. You can think ab
 <p>Layering is logical separation that you implement in your application. It has a relation with N-Tier but we will
 move onto it later:</p>
 
-<p><img src="/img/5-layer.png" alt="5-layer" title="5-layer" /></p>
+<p><center><img src="/img/5-layer.png" alt="5-layer" title="5-layer" /></center></p>
 
 <h3 id="presentation">Presentation</h3>
 
@@ -229,7 +233,7 @@ client-side rendering but we talked about general idea above:</p>
 
 <h3 id="1-tier">1-tier</h3>
 
-<p><img src="/img/1-tier.png" alt="1-tier" title="1-tier" /></p>
+<p><center><img src="/img/1-tier.png" alt="1-tier" title="1-tier" /></center></p>
 
 <p>All layers belong to one physical location. Like a game that installed on the user&rsquo;s database and
 doesn&rsquo;t request any other external system, it has own database on the user&rsquo;s server and all logics implemented there.</p>
@@ -239,7 +243,7 @@ doesn&rsquo;t request any other external system, it has own database on the user
 <p>Lets say you want to central database management and all other parts can remain still user&rsquo;s server, like hes is
 playing a game on mobile-phone but data is stored in our servers.</p>
 
-<p><img src="/img/2-tier.png" alt="2-tier" title="2-tier" /></p>
+<p><center><img src="/img/2-tier.png" alt="2-tier" title="2-tier" /></center></p>
 
 <p>Up to now, you have a performance advantage. If you need to support more users and need more security
 than you need <strong>scalability</strong>.</p>
@@ -250,12 +254,12 @@ than you need <strong>scalability</strong>.</p>
 Presentation and UI is on the user&rsquo;s server (client), business logic and data access belongs to application server,
 and data storage is in another server.</p>
 
-<p><img src="/img/3-tier.png" alt="3-tier" title="3-tier" /></p>
+<p><center><img src="/img/3-tier.png" alt="3-tier" title="3-tier" /></center></p>
 
 <p>But now your user&rsquo;s request is jumping more tier&rsquo;s which will increase your network latency.
 As talked before it is about trade-offs. Also now you started to have benefit of scaling like:</p>
 
-<p><img src="/img/3-tier-scaled.png" alt="3-tier-scaled" title="3-tier-scaled" /></p>
+<p><center><img src="/img/3-tier-scaled.png" alt="3-tier-scaled" title="3-tier-scaled" /></center></p>
 
 <p>So depending on your application needs, security levels, latency limits, user counts etc. You can split it up to
 more tiers which is it the reason why its name is N-Tier.</p>
