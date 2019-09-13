@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Cemal Önder</title>
-    <link>http://cemalonder.com/tags/</link>
+    <link>http://cemalonder.comc/tags/</link>
     <description>Recent content in Tags on Cemal Önder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 13 Sep 2019 11:04:57 +0300</lastBuildDate>
     
-	<atom:link href="http://cemalonder.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://cemalonder.comc/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Apereo</title>
-      <link>http://cemalonder.com/tags/apereo/</link>
+      <link>http://cemalonder.comc/tags/apereo/</link>
       <pubDate>Fri, 13 Sep 2019 11:04:57 +0300</pubDate>
       
-      <guid>http://cemalonder.com/tags/apereo/</guid>
+      <guid>http://cemalonder.comc/tags/apereo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CAS</title>
-      <link>http://cemalonder.com/tags/cas/</link>
+      <link>http://cemalonder.comc/tags/cas/</link>
       <pubDate>Fri, 13 Sep 2019 11:04:57 +0300</pubDate>
       
-      <guid>http://cemalonder.com/tags/cas/</guid>
+      <guid>http://cemalonder.comc/tags/cas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Java</title>
-      <link>http://cemalonder.com/tags/java/</link>
+      <link>http://cemalonder.comc/tags/java/</link>
       <pubDate>Fri, 13 Sep 2019 11:04:57 +0300</pubDate>
       
-      <guid>http://cemalonder.com/tags/java/</guid>
+      <guid>http://cemalonder.comc/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>architecture</title>
-      <link>http://cemalonder.com/tags/architecture/</link>
+      <link>http://cemalonder.comc/tags/architecture/</link>
       <pubDate>Fri, 13 Sep 2019 08:37:57 +0300</pubDate>
       
-      <guid>http://cemalonder.com/tags/architecture/</guid>
+      <guid>http://cemalonder.comc/tags/architecture/</guid>
       <description></description>
     </item>
     
     <item>
       <title>layering</title>
-      <link>http://cemalonder.com/tags/layering/</link>
+      <link>http://cemalonder.comc/tags/layering/</link>
       <pubDate>Fri, 13 Sep 2019 08:37:57 +0300</pubDate>
       
-      <guid>http://cemalonder.com/tags/layering/</guid>
+      <guid>http://cemalonder.comc/tags/layering/</guid>
       <description></description>
     </item>
     
     <item>
       <title>n-tier</title>
-      <link>http://cemalonder.com/tags/n-tier/</link>
+      <link>http://cemalonder.comc/tags/n-tier/</link>
       <pubDate>Fri, 13 Sep 2019 08:37:57 +0300</pubDate>
       
-      <guid>http://cemalonder.com/tags/n-tier/</guid>
+      <guid>http://cemalonder.comc/tags/n-tier/</guid>
       <description></description>
     </item>
     

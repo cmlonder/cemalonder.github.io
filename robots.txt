@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://cemalonder.com/sitemap.xml
+Sitemap: http://cemalonder.comc/sitemap.xml
