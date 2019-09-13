@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Cemal Önder</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>http://cemalonder.com/categories/</link>
     <description>Recent content in Categories on Cemal Önder</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 13 Sep 2019 11:04:57 +0300</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://cemalonder.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>JAVA</title>
-      <link>http://localhost:1313/categories/java/</link>
+      <link>http://cemalonder.com/categories/java/</link>
       <pubDate>Fri, 13 Sep 2019 11:04:57 +0300</pubDate>
       
-      <guid>http://localhost:1313/categories/java/</guid>
+      <guid>http://cemalonder.com/categories/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>architecture</title>
-      <link>http://localhost:1313/categories/architecture/</link>
+      <link>http://cemalonder.com/categories/architecture/</link>
       <pubDate>Fri, 13 Sep 2019 08:37:57 +0300</pubDate>
       
-      <guid>http://localhost:1313/categories/architecture/</guid>
+      <guid>http://cemalonder.com/categories/architecture/</guid>
       <description></description>
     </item>
     

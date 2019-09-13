@@ -1,99 +1,99 @@
-<?xml-stylesheet type="text/xsl" href="http://localhost:1313/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="http://cemalonder.com/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/tags/apereo/</loc>
+    <loc>http://cemalonder.com/tags/apereo/</loc>
     <lastmod>2019-09-13T11:04:57+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/cas/</loc>
+    <loc>http://cemalonder.com/tags/cas/</loc>
     <lastmod>2019-09-13T11:04:57+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/cas-custom-authentication-principal-json-problem/</loc>
+    <loc>http://cemalonder.com/post/cas-custom-authentication-principal-json-problem/</loc>
     <lastmod>2019-09-13T11:04:57+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://cemalonder.com/categories/</loc>
     <lastmod>2019-09-13T11:04:57+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://cemalonder.com/</loc>
     <lastmod>2019-09-13T11:04:57+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/java/</loc>
+    <loc>http://cemalonder.com/categories/java/</loc>
     <lastmod>2019-09-13T11:04:57+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/java/</loc>
+    <loc>http://cemalonder.com/tags/java/</loc>
     <lastmod>2019-09-13T11:04:57+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>http://cemalonder.com/post/</loc>
     <lastmod>2019-09-13T11:04:57+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://cemalonder.com/tags/</loc>
     <lastmod>2019-09-13T11:04:57+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/5-layer-and-5-tier-architecture/</loc>
+    <loc>http://cemalonder.com/post/5-layer-and-5-tier-architecture/</loc>
     <lastmod>2019-09-13T08:37:57+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/architecture/</loc>
+    <loc>http://cemalonder.com/categories/architecture/</loc>
     <lastmod>2019-09-13T08:37:57+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/architecture/</loc>
+    <loc>http://cemalonder.com/tags/architecture/</loc>
     <lastmod>2019-09-13T08:37:57+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/layering/</loc>
+    <loc>http://cemalonder.com/tags/layering/</loc>
     <lastmod>2019-09-13T08:37:57+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/n-tier/</loc>
+    <loc>http://cemalonder.com/tags/n-tier/</loc>
     <lastmod>2019-09-13T08:37:57+03:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
