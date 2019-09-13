@@ -56,7 +56,7 @@ Let&rsquo;s look at my custom authentication handler&rsquo;s overriden authentic
 
 <meta itemprop="datePublished" content="2019-09-13T11:04:57&#43;03:00" />
 <meta itemprop="dateModified" content="2019-09-13T11:04:57&#43;03:00" />
-<meta itemprop="wordCount" content="890">
+<meta itemprop="wordCount" content="894">
 
 
 
@@ -148,10 +148,10 @@ Let&rsquo;s look at my custom authentication handler&rsquo;s overriden authentic
 <ul>
 <li><a href="#problems">Problems:</a>
 <ul>
-<li><a href="#1-cas-converts-list-of-hashmap-as-string-when-called-login-endpoint">1) CAS converts List of HashMap as String when called /login endpoint</a></li>
-<li><a href="#2-cas-converts-hashmap-with-extra-attributes-like-left-right-when-called-ticket-endpoint">2) CAS converts HashMap with extra attributes like &ldquo;left&rdquo;, &ldquo;right&rdquo; when called /ticket endpoint</a></li>
+<li><a href="#1-login-endpoint">1) /login endpoint</a></li>
+<li><a href="#2-ticket-endpoint">2) /ticket endpoint</a></li>
 </ul></li>
-<li><a href="#workarounds-solutions">Workarounds/Solutions</a></li>
+<li><a href="#workarounds">Workarounds</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -197,7 +197,11 @@ JSON representation when /login URL is called.</p>
 
 <h2 id="problems">Problems:</h2>
 
-<h3 id="1-cas-converts-list-of-hashmap-as-string-when-called-login-endpoint">1) CAS converts List of HashMap as String when called /login endpoint</h3>
+<h3 id="1-login-endpoint">1) /login endpoint</h3>
+
+<blockquote>
+<p>CAS converts List of HashMap as String when called /login endpoint</p>
+</blockquote>
 
 <p>When I create Principal as <code>Map&lt;String, new ArrayList&lt;new HashMap&lt;&gt;&gt;</code>, my HashMap is converted to toString
 representation of the HashMap. So It&rsquo;s type information is now turned from HashMap -&gt; String, which makes CAS return not
@@ -253,7 +257,11 @@ correct JSON to my client because String is serialized as it is for JSON. Here w
 &lt;/cas:serviceResponse&gt;</pre></td></tr></table>
 </div>
 </div>
-<h3 id="2-cas-converts-hashmap-with-extra-attributes-like-left-right-when-called-ticket-endpoint">2) CAS converts HashMap with extra attributes like &ldquo;left&rdquo;, &ldquo;right&rdquo; when called /ticket endpoint</h3>
+<h3 id="2-ticket-endpoint">2) /ticket endpoint</h3>
+
+<blockquote>
+<p>CAS converts HashMap with extra attributes like &ldquo;left&rdquo;, &ldquo;right&rdquo; when called /ticket endpoint</p>
+</blockquote>
 
 <p><strong>1)</strong> You return new SimplePrincipal(id, new HashMap<String, Object>)</p>
 
@@ -318,7 +326,7 @@ the case BeansWriterASM. This writer gets all attributes of the class and use th
 (<a href="https://bitbucket.org/connect2id/nimbus-jose-jwt/pull-requests/50/wip-allow-replacing-json-smart-with/diff">https://bitbucket.org/connect2id/nimbus-jose-jwt/pull-requests/50/wip-allow-replacing-json-smart-with/diff</a>) in their
 next releases which then CAS may change it too but it seems long path for both.</p>
 
-<h2 id="workarounds-solutions">Workarounds/Solutions</h2>
+<h2 id="workarounds">Workarounds</h2>
 
 <p><strong>1)</strong> Wrap your attributes with JSONAware class which json-smart library allows you return your own JSONString
 representation. This is not safe solution since if you change your CAS version and if CAS changed any library
