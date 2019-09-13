@@ -18,7 +18,7 @@
 
 <meta name="author" content="cemal" /><meta name="description" content="There are differences between N-layer and N-tier definitions. We can start with explaining those first:
 5-layer Architecture Layering is logical separation that you implement in your application. It has a relation with N-Tier but we will move onto it later:
-![5-layer](/img/5-layer.png &#34;5-layer&#34;)  Presentation This is how your application is shown to the user. You can think about it is a look and feel of the application. But it is very similar to the UI layer, today&amp;rsquo;s world with the improvement of JavaScript (client-side-rendering solutions like React, Angular, etc." /><meta name="keywords" content="Hugo, theme, even" />
+Presentation This is how your application is shown to the user. You can think about it is a look and feel of the application. But it is very similar to the UI layer, today&amp;rsquo;s world with the improvement of JavaScript (client-side-rendering solutions like React, Angular, etc." /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
@@ -43,7 +43,7 @@
 <meta property="og:title" content="5 Layer and 5 Tier Architecture" />
 <meta property="og:description" content="There are differences between N-layer and N-tier definitions. We can start with explaining those first:
 5-layer Architecture Layering is logical separation that you implement in your application. It has a relation with N-Tier but we will move onto it later:
-![5-layer](/img/5-layer.png &#34;5-layer&#34;)  Presentation This is how your application is shown to the user. You can think about it is a look and feel of the application. But it is very similar to the UI layer, today&rsquo;s world with the improvement of JavaScript (client-side-rendering solutions like React, Angular, etc." />
+Presentation This is how your application is shown to the user. You can think about it is a look and feel of the application. But it is very similar to the UI layer, today&rsquo;s world with the improvement of JavaScript (client-side-rendering solutions like React, Angular, etc." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://cemalonder.comc/post/5-layer-and-5-tier-architecture/" />
 <meta property="article:published_time" content="2019-09-13T08:37:57+03:00" />
@@ -51,12 +51,12 @@
 <meta itemprop="name" content="5 Layer and 5 Tier Architecture">
 <meta itemprop="description" content="There are differences between N-layer and N-tier definitions. We can start with explaining those first:
 5-layer Architecture Layering is logical separation that you implement in your application. It has a relation with N-Tier but we will move onto it later:
-![5-layer](/img/5-layer.png &#34;5-layer&#34;)  Presentation This is how your application is shown to the user. You can think about it is a look and feel of the application. But it is very similar to the UI layer, today&rsquo;s world with the improvement of JavaScript (client-side-rendering solutions like React, Angular, etc.">
+Presentation This is how your application is shown to the user. You can think about it is a look and feel of the application. But it is very similar to the UI layer, today&rsquo;s world with the improvement of JavaScript (client-side-rendering solutions like React, Angular, etc.">
 
 
 <meta itemprop="datePublished" content="2019-09-13T08:37:57&#43;03:00" />
 <meta itemprop="dateModified" content="2019-09-13T08:37:57&#43;03:00" />
-<meta itemprop="wordCount" content="666">
+<meta itemprop="wordCount" content="656">
 
 
 
@@ -65,7 +65,7 @@
 <meta name="twitter:title" content="5 Layer and 5 Tier Architecture"/>
 <meta name="twitter:description" content="There are differences between N-layer and N-tier definitions. We can start with explaining those first:
 5-layer Architecture Layering is logical separation that you implement in your application. It has a relation with N-Tier but we will move onto it later:
-![5-layer](/img/5-layer.png &#34;5-layer&#34;)  Presentation This is how your application is shown to the user. You can think about it is a look and feel of the application. But it is very similar to the UI layer, today&rsquo;s world with the improvement of JavaScript (client-side-rendering solutions like React, Angular, etc."/>
+Presentation This is how your application is shown to the user. You can think about it is a look and feel of the application. But it is very similar to the UI layer, today&rsquo;s world with the improvement of JavaScript (client-side-rendering solutions like React, Angular, etc."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -176,13 +176,7 @@
 <p>Layering is logical separation that you implement in your application. It has a relation with N-Tier but we will
 move onto it later:</p>
 
-<div class='align-center'>
-  
-
-![5-layer](/img/5-layer.png "5-layer")
-
-
-</div>
+<p><img src="/img/5-layer.png" alt="5-layer" title="5-layer" /></p>
 
 <h3 id="presentation">Presentation</h3>
 
@@ -235,12 +229,7 @@ client-side rendering but we talked about general idea above:</p>
 
 <h3 id="1-tier">1-tier</h3>
 
-<div class='align-center'>
-  
-## center
-![1-tier](/img/1-tier.png "1-tier")
-
-</div>
+<p><img src="/img/1-tier.png" alt="1-tier" title="1-tier" /></p>
 
 <p>All layers belong to one physical location. Like a game that installed on the user&rsquo;s database and
 doesn&rsquo;t request any other external system, it has own database on the user&rsquo;s server and all logics implemented there.</p>
@@ -261,24 +250,12 @@ than you need <strong>scalability</strong>.</p>
 Presentation and UI is on the user&rsquo;s server (client), business logic and data access belongs to application server,
 and data storage is in another server.</p>
 
-<div class='align-center'>
-  
-
-![3-tier](/img/3-tier.png "3-tier")
-
-
-</div>
+<p><img src="/img/3-tier.png" alt="3-tier" title="3-tier" /></p>
 
 <p>But now your user&rsquo;s request is jumping more tier&rsquo;s which will increase your network latency.
 As talked before it is about trade-offs. Also now you started to have benefit of scaling like:</p>
 
-<div class='align-center'>
-  
-
-![3-tier-scaled](/img/3-tier-scaled.png "3-tier-scaled")
-
-
-</div>
+<p><img src="/img/3-tier-scaled.png" alt="3-tier-scaled" title="3-tier-scaled" /></p>
 
 <p>So depending on your application needs, security levels, latency limits, user counts etc. You can split it up to
 more tiers which is it the reason why its name is N-Tier.</p>
