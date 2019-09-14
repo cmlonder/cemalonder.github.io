@@ -18,7 +18,7 @@
 
 <meta name="author" content="cemal" /><meta name="description" content="I would like to share my journey on returning attributes from custom authentication via using CAS. First of all we have 2 kind of endpoints to generate tickets, first one with using /tickets endpoint directly from an App, second one is using /login endpoint from browser. I had json problem in both of them:
 Let&amp;rsquo;s look at my custom authentication handler&amp;rsquo;s overriden authenticateUsernamePasswordInternal function:
-1 2  return createHandlerResult( credential, this." /><meta name="keywords" content="Hugo, theme, even" />
+1 2  return createHandlerResult( credential, this." /><meta name="keywords" content="academia, agile, agile adoption, analysis patterns, application architecture, application integration, bad things, big data, board games, build scripting, certification, clean code, collaboration, computer history, conference panels, conferences, continuous delivery, database, design, dictionary, distributed computing magazine, diversions, diversity, documentation, domain driven design, domain specific language, domestic, encapsulation, enterprise architecture, estimation, event architectures, evolutionary design, expositional architectures, extreme programming, front-end, gadgets, ieeeSoftware, infodecks, internet culture, interviews, language feature, language workbench, lean, legacy rehab, legal, metrics, microservices, microsoft, mobile, noSQL, object collaboration design, parser generators, photography, podcast, popular, presentations, privacy, process theory, productivity, programming platforms, project planning, projects, recruiting, refactoring, refactoring boundary, requirements analysis, retrospective, ruby, scrum, security, software craftsmanship, talk videos, team environment, team organization, technical debt, technical leadership, test categories, testing, thoughtworks, tools, travel, uml, version control, web development, web services, website, writing" />
 
 
 
@@ -60,7 +60,7 @@ Let&rsquo;s look at my custom authentication handler&rsquo;s overriden authentic
 
 
 
-<meta itemprop="keywords" content="CAS,Apereo,Java," />
+<meta itemprop="keywords" content="cas,apereo,java," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Cas Custom Authentication Principal JSON Problem"/>
 <meta name="twitter:description" content="I would like to share my journey on returning attributes from custom authentication via using CAS. First of all we have 2 kind of endpoints to generate tickets, first one with using /tickets endpoint directly from an App, second one is using /login endpoint from browser. I had json problem in both of them:
@@ -133,7 +133,7 @@ Let&rsquo;s look at my custom authentication handler&rsquo;s overriden authentic
       <div class="post-meta">
         <span class="post-time"> 2019-09-13 </span>
         <div class="post-category">
-            <a href="/categories/java/"> JAVA </a>
+            <a href="/categories/java/"> Java </a>
             </div>
         
       </div>
@@ -445,9 +445,9 @@ our own toString representation. So for both ways we returned correct JSON repre
 </div>
 <footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/cas/">CAS</a>
-          <a href="/tags/apereo/">Apereo</a>
-          <a href="/tags/java/">Java</a>
+          <a href="/tags/cas/">cas</a>
+          <a href="/tags/apereo/">apereo</a>
+          <a href="/tags/java/">java</a>
           </div>
       <nav class="post-nav">
         
@@ -460,7 +460,23 @@ our own toString representation. So for both ways we returned correct JSON repre
     </footer>
   </article>
         </div>
-        
+        <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      var gitalk = new Gitalk({
+        id: '2019-09-13 11:04:57 \x2b0300 \x2b03',
+        title: 'Cas Custom Authentication Principal JSON Problem',
+        clientID: '49ce1defb363752ece8b',
+        clientSecret: '7768af2278e48037e3b7612ecee5e37cafb6719f',
+        repo: 'cemalonder-blog-comments',
+        owner: 'cmlonder',
+        admin: ['cmlonder'],
+        body: decodeURI(location.href)
+      });
+      gitalk.render('gitalk-container');
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/gitalk/gitalk">comments powered by gitalk.</a></noscript>
 
   
 
