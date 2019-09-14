@@ -23,78 +23,64 @@
   </url>
   
   <url>
-    <loc>http://cemalonder.com/categories/</loc>
-    <lastmod>2019-09-13T11:04:57+03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://cemalonder.com/</loc>
-    <lastmod>2019-09-13T11:04:57+03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cemalonder.com/categories/java/</loc>
-    <lastmod>2019-09-13T11:04:57+03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cemalonder.com/tags/java/</loc>
-    <lastmod>2019-09-13T11:04:57+03:00</lastmod>
+    <lastmod>2019-09-14T08:17:57+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cemalonder.com/post/</loc>
-    <lastmod>2019-09-13T11:04:57+03:00</lastmod>
+    <lastmod>2019-09-14T08:17:57+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cemalonder.com/tags/</loc>
-    <lastmod>2019-09-13T11:04:57+03:00</lastmod>
+    <lastmod>2019-09-14T08:17:57+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cemalonder.com/post/5-layer-and-5-tier-architecture/</loc>
-    <lastmod>2019-09-13T08:37:57+03:00</lastmod>
+    <lastmod>2019-09-14T08:17:57+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cemalonder.com/categories/architecture/</loc>
+    <lastmod>2019-09-14T08:17:57+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cemalonder.com/tags/architecture/</loc>
-    <lastmod>2019-09-13T08:37:57+03:00</lastmod>
+    <lastmod>2019-09-14T08:17:57+03:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cemalonder.com/categories/</loc>
+    <lastmod>2019-09-14T08:17:57+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cemalonder.com/tags/layer/</loc>
-    <lastmod>2019-09-13T08:37:57+03:00</lastmod>
+    <lastmod>2019-09-14T08:17:57+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cemalonder.com/tags/n-tier/</loc>
-    <lastmod>2019-09-13T08:37:57+03:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cemalonder.com/categories/software-architecture/</loc>
-    <lastmod>2019-09-13T08:37:57+03:00</lastmod>
+    <lastmod>2019-09-14T08:17:57+03:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

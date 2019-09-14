@@ -18,7 +18,7 @@
       
       <guid>http://cemalonder.com/post/cas-custom-authentication-principal-json-problem/</guid>
       <description>I would like to share my journey on returning attributes from custom authentication via using CAS. First of all we have 2 kind of endpoints to generate tickets, first one with using /tickets endpoint directly from an App, second one is using /login endpoint from browser. I had json problem in both of them:
-Let&amp;rsquo;s look at my custom authentication handler&amp;rsquo;s overriden authenticateUsernamePasswordInternal function:
+Let&amp;rsquo;s look at my custom authentication handler&amp;rsquo;s overridden authenticateUsernamePasswordInternal function:
 1 2  return createHandlerResult( credential, this.</description>
     </item>
     
