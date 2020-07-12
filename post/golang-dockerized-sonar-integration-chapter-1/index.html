@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="Software Developer">
+  <meta name="description" content="Overview In this series, we are going to integrate a Go project with Sonar using Docker. Chapter 1 will be about creating a go application, writing unit tests and generating code coverage, in Chapter 2 we will start local SonarQube, configure our project using Sonar Scanner and push our coverage report using SonarScanner CLI, in Chapter 3 we will">
 
   
-  <link rel="alternate" hreflang="en-us" href="http://cemalonder.com/post/">
+  <link rel="alternate" hreflang="en-us" href="http://cemalonder.com/post/golang-dockerized-sonar-integration-chapter-1/">
 
   
 
@@ -212,14 +212,12 @@
   
 
   
-  <link rel="alternate" href="/post/index.xml" type="application/rss+xml" title="Cemal Önder">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="http://cemalonder.com/post/">
+  <link rel="canonical" href="http://cemalonder.com/post/golang-dockerized-sonar-integration-chapter-1/">
 
   
   
@@ -235,17 +233,65 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Cemal Önder">
-  <meta property="og:url" content="http://cemalonder.com/post/">
-  <meta property="og:title" content="Posts | Cemal Önder">
-  <meta property="og:description" content="Software Developer"><meta property="og:image" content="http://cemalonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="http://cemalonder.com/post/golang-dockerized-sonar-integration-chapter-1/">
+  <meta property="og:title" content="GoLang Dockerized Sonar Integration - Chapter 1 | Cemal Önder">
+  <meta property="og:description" content="Overview In this series, we are going to integrate a Go project with Sonar using Docker. Chapter 1 will be about creating a go application, writing unit tests and generating code coverage, in Chapter 2 we will start local SonarQube, configure our project using Sonar Scanner and push our coverage report using SonarScanner CLI, in Chapter 3 we will"><meta property="og:image" content="http://cemalonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="http://cemalonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2020-07-12T01:28:56&#43;03:00">
+    
+      <meta property="article:published_time" content="2020-07-12T01:28:56&#43;03:00">
+    
+    <meta property="article:modified_time" content="2020-07-12T01:28:56&#43;03:00">
   
 
   
 
 
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://cemalonder.com/post/golang-dockerized-sonar-integration-chapter-1/"
+  },
+  "headline": "GoLang Dockerized Sonar Integration - Chapter 1",
+  
+  "datePublished": "2020-07-12T01:28:56+03:00",
+  "dateModified": "2020-07-12T01:28:56+03:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Cemal Önder"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Cemal Önder",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://cemalonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "Overview In this series, we are going to integrate a Go project with Sonar using Docker. Chapter 1 will be about creating a go application, writing unit tests and generating code coverage, in Chapter 2 we will start local SonarQube, configure our project using Sonar Scanner and push our coverage report using SonarScanner CLI, in Chapter 3 we will"
+}
+</script>
+
+  
+
+  
 
 
   
@@ -287,7 +333,7 @@
 
 
 
-  <title>Posts | Cemal Önder</title>
+  <title>GoLang Dockerized Sonar Integration - Chapter 1 | Cemal Önder</title>
 
 </head>
 <body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
@@ -455,80 +501,33 @@
 </nav>
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
+  <article class="article">
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+  
+
   
   
+  
+<div class="article-container pt-3">
+  <h1>GoLang Dockerized Sonar Integration - Chapter 1</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1>Posts</h1>
-
-  
-
-  
-</div>
-
-
-
-<div class="universal-wrapper">
-
-  
-
-  
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/golang-dockerized-sonar-integration-chapter-1/" >GoLang Dockerized Sonar Integration - Chapter 1</a>
-    </h3>
-
-    
-    <a href="/post/golang-dockerized-sonar-integration-chapter-1/" class="summary-link">
-      <div class="article-style">
-        Overview In this series, we are going to integrate a Go project with Sonar using Docker. Chapter 1 will be about creating a go application, writing unit tests and generating code coverage, in Chapter 2 we will start local SonarQube, configure our project using Sonar Scanner and push our coverage report using SonarScanner CLI, in Chapter 3 we will
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
 <div class="article-metadata">
@@ -578,211 +577,277 @@
 
 </div>
 
-      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h3 id="overview">Overview</h3>
+<p>In this series, we are going to integrate a Go project with Sonar using Docker.
+
+<a href="">Chapter 1</a> will be about creating a go application, writing unit tests and generating code coverage, 
+in 
+<a href="">Chapter 2</a> we will start local SonarQube, configure our project using Sonar Scanner and push our coverage report
+using SonarScanner CLI, in 
+<a href="">Chapter 3</a> we will</p>
+<h3 id="1-create-a-simple-go-application">1. Create a simple Go Application</h3>
+<h3 id="2-write-unit-tests">2. Write unit tests</h3>
+<h3 id="3-generate-code-coverage">3. Generate code coverage</h3>
+<h3 id="summary">Summary</h3>
+
     </div>
 
     
 
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/go/">go</a>
+  
+  <a class="badge badge-light" href="/tag/sonar/">sonar</a>
+  
 </div>
 
-    
-  
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
     
       
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/welcome-back-clean-code/welcome-back-clean-code/" >Welcome Back Clean Code</a>
-    </h3>
-
-    
-    <a href="/post/welcome-back-clean-code/welcome-back-clean-code/" class="summary-link">
-      <div class="article-style">
-        I recently read an article from Dan Abramov who is the creator of Redux. Even if I agree his article point:
- Don’t be a clean code zealot. Clean code is not a goal.
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
       
-
       
         
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http://cemalonder.com/post/golang-dockerized-sonar-integration-chapter-1/&amp;text=GoLang%20Dockerized%20Sonar%20Integration%20-%20Chapter%201" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
     
       
-    
-    Jan 13, 2020
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    4 min read
-  </span>
-  
-
-  
-  
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/category/software-principles/">software principles</a></span>
-  
-
-</div>
-
       
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/post/5-layer-and-5-tier-architecture/" >5 Layer and 5 Tier Architecture</a>
-    </h3>
-
-    
-    <a href="/post/5-layer-and-5-tier-architecture/" class="summary-link">
-      <div class="article-style">
-        There are differences between N-layer and N-tier definitions. We can start with explaining those first:
-5-layer Architecture Layering is logical separation that you implement in your application. It has a relation with N-Tier but we will move onto it later:
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
       
         
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http://cemalonder.com/post/golang-dockerized-sonar-integration-chapter-1/&amp;t=GoLang%20Dockerized%20Sonar%20Integration%20-%20Chapter%201" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
     
       
-          Last updated on
       
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=GoLang%20Dockerized%20Sonar%20Integration%20-%20Chapter%201&amp;body=http://cemalonder.com/post/golang-dockerized-sonar-integration-chapter-1/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
     
-    Sep 14, 2019
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    4 min read
-  </span>
-  
-
-  
-  
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/category/architecture/">architecture</a></span>
-  
-
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http://cemalonder.com/post/golang-dockerized-sonar-integration-chapter-1/&amp;title=GoLang%20Dockerized%20Sonar%20Integration%20-%20Chapter%201" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=GoLang%20Dockerized%20Sonar%20Integration%20-%20Chapter%201%20http://cemalonder.com/post/golang-dockerized-sonar-integration-chapter-1/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http://cemalonder.com/post/golang-dockerized-sonar-integration-chapter-1/&amp;title=GoLang%20Dockerized%20Sonar%20Integration%20-%20Chapter%201" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+    
       
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-circle" src="/author/cemal-onder/avatar_huc63091bfd94f6ac856b1fdc8fbb74eee_106618_270x270_fill_lanczos_center_2.png" alt="Cemal Önder">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="http://cemalonder.com">Cemal Önder</a></h5>
+        <h6 class="card-subtitle">Software Developer</h6>
+        <p class="card-text">Love to learn &amp; share about Computer Science &amp; Software Development</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/cmlonder" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/cmlonder/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:cemalonder1@gmail.com" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/files/cv.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
     </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
   
+
 
   
 
 
-</div>
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  </div>
+</article>
 
       
 

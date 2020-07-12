@@ -35,6 +35,26 @@
     </item>
     
     <item>
+      <title>GoLang Dockerized Sonar Integration - Chapter 1</title>
+      <link>http://cemalonder.com/post/golang-dockerized-sonar-integration-chapter-1/</link>
+      <pubDate>Sun, 12 Jul 2020 01:28:56 +0300</pubDate>
+      <guid>http://cemalonder.com/post/golang-dockerized-sonar-integration-chapter-1/</guid>
+      <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
+&lt;p&gt;In this series, we are going to integrate a Go project with Sonar using Docker.
+
+&lt;a href=&#34;&#34;&gt;Chapter 1&lt;/a&gt; will be about creating a go application, writing unit tests and generating code coverage, 
+in 
+&lt;a href=&#34;&#34;&gt;Chapter 2&lt;/a&gt; we will start local SonarQube, configure our project using Sonar Scanner and push our coverage report
+using SonarScanner CLI, in 
+&lt;a href=&#34;&#34;&gt;Chapter 3&lt;/a&gt; we will&lt;/p&gt;
+&lt;h3 id=&#34;1-create-a-simple-go-application&#34;&gt;1. Create a simple Go Application&lt;/h3&gt;
+&lt;h3 id=&#34;2-write-unit-tests&#34;&gt;2. Write unit tests&lt;/h3&gt;
+&lt;h3 id=&#34;3-generate-code-coverage&#34;&gt;3. Generate code coverage&lt;/h3&gt;
+&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Welcome Back Clean Code</title>
       <link>http://cemalonder.com/post/welcome-back-clean-code/welcome-back-clean-code/</link>
       <pubDate>Mon, 13 Jan 2020 07:14:38 +0300</pubDate>

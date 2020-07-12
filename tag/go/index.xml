@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>go | Cemal Önder</title>
+    <link>http://cemalonder.com/tag/go/</link>
+      <atom:link href="http://cemalonder.com/tag/go/index.xml" rel="self" type="application/rss+xml" />
+    <description>go</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 12 Jul 2020 01:28:56 +0300</lastBuildDate>
+    <image>
+      <url>http://cemalonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>go</title>
+      <link>http://cemalonder.com/tag/go/</link>
+    </image>
+    
+    <item>
+      <title>GoLang Dockerized Sonar Integration - Chapter 1</title>
+      <link>http://cemalonder.com/post/golang-dockerized-sonar-integration-chapter-1/</link>
+      <pubDate>Sun, 12 Jul 2020 01:28:56 +0300</pubDate>
+      <guid>http://cemalonder.com/post/golang-dockerized-sonar-integration-chapter-1/</guid>
+      <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
+&lt;p&gt;In this series, we are going to integrate a Go project with Sonar using Docker.
+
+&lt;a href=&#34;&#34;&gt;Chapter 1&lt;/a&gt; will be about creating a go application, writing unit tests and generating code coverage, 
+in 
+&lt;a href=&#34;&#34;&gt;Chapter 2&lt;/a&gt; we will start local SonarQube, configure our project using Sonar Scanner and push our coverage report
+using SonarScanner CLI, in 
+&lt;a href=&#34;&#34;&gt;Chapter 3&lt;/a&gt; we will&lt;/p&gt;
+&lt;h3 id=&#34;1-create-a-simple-go-application&#34;&gt;1. Create a simple Go Application&lt;/h3&gt;
+&lt;h3 id=&#34;2-write-unit-tests&#34;&gt;2. Write unit tests&lt;/h3&gt;
+&lt;h3 id=&#34;3-generate-code-coverage&#34;&gt;3. Generate code coverage&lt;/h3&gt;
+&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
