@@ -38,12 +38,22 @@
   </url>
   
   <url>
+    <loc>http://cemalonder.com/category/continuous-integration/</loc>
+    <lastmod>2020-07-12T01:28:56+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://cemalonder.com/tag/docker/</loc>
+    <lastmod>2020-07-12T01:28:56+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://cemalonder.com/tag/go/</loc>
     <lastmod>2020-07-12T01:28:56+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/post/golang-dockerized-sonar-integration-chapter-1/</loc>
+    <loc>http://cemalonder.com/post/go-sonar-integration-using-docker-chapter-1/</loc>
     <lastmod>2020-07-12T01:28:56+03:00</lastmod>
   </url>
   

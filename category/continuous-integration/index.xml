@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>sonar | Cemal Önder</title>
-    <link>http://cemalonder.com/tag/sonar/</link>
-      <atom:link href="http://cemalonder.com/tag/sonar/index.xml" rel="self" type="application/rss+xml" />
-    <description>sonar</description>
+    <title>continuous integration | Cemal Önder</title>
+    <link>http://cemalonder.com/category/continuous-integration/</link>
+      <atom:link href="http://cemalonder.com/category/continuous-integration/index.xml" rel="self" type="application/rss+xml" />
+    <description>continuous integration</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 12 Jul 2020 01:28:56 +0300</lastBuildDate>
     <image>
       <url>http://cemalonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
-      <title>sonar</title>
-      <link>http://cemalonder.com/tag/sonar/</link>
+      <title>continuous integration</title>
+      <link>http://cemalonder.com/category/continuous-integration/</link>
     </image>
     
     <item>
