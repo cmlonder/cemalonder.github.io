@@ -254,7 +254,9 @@ INFO: Total time: 12.923s
 INFO: Final Memory: 13M/47M
 INFO: ------------------------------------------------------------------------
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; You can not use http://localhost:9000 instead of http://192.168.0.11:9000 since sonar-scanner-cli Docker container runs
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; You can not use 
+&lt;a href=&#34;&#34;&gt;http://localhost:9000&lt;/a&gt; instead of 
+&lt;a href=&#34;&#34;&gt;http://192.168.0.11:9000&lt;/a&gt; since sonar-scanner-cli Docker container runs
 on its host and &lt;strong&gt;localhost&lt;/strong&gt; for that container is not same address with localhost of yours (at least in Windows, Mac&amp;rsquo;s 
 docker daemon may be editing etc/hosts files so users in Mac MAY be using localhost even they are working in Docker)&lt;/p&gt;
 &lt;p&gt;Now if you visit 
