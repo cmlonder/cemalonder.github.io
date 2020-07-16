@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content="1. Overview Apache Kafka is a distributed streaming platform that is used to send data between applications in real-time. It is good to have an overview of some Kafka terminology before going further;">
+  <meta name="description" content="Overview Apache Kafka is a distributed streaming platform that is used to send data between applications in real-time. It is good to have an overview of some Kafka terminology before going further;">
 
   
   <link rel="alternate" hreflang="en-us" href="http://cemalonder.com/post/spring-boot-kafka-tutorial/">
@@ -273,7 +273,7 @@
   <meta property="og:site_name" content="Cemal Önder">
   <meta property="og:url" content="http://cemalonder.com/post/spring-boot-kafka-tutorial/">
   <meta property="og:title" content="Spring Boot Kafka Tutorial | Cemal Önder">
-  <meta property="og:description" content="1. Overview Apache Kafka is a distributed streaming platform that is used to send data between applications in real-time. It is good to have an overview of some Kafka terminology before going further;"><meta property="og:image" content="http://cemalonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:description" content="Overview Apache Kafka is a distributed streaming platform that is used to send data between applications in real-time. It is good to have an overview of some Kafka terminology before going further;"><meta property="og:image" content="http://cemalonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="http://cemalonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
@@ -323,7 +323,7 @@
       "url": "http://cemalonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "1. Overview Apache Kafka is a distributed streaming platform that is used to send data between applications in real-time. It is good to have an overview of some Kafka terminology before going further;"
+  "description": "Overview Apache Kafka is a distributed streaming platform that is used to send data between applications in real-time. It is good to have an overview of some Kafka terminology before going further;"
 }
 </script>
 
@@ -598,7 +598,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    6 min read
+    5 min read
   </span>
   
 
@@ -638,7 +638,7 @@
   <div class="article-container">
 
     <div class="article-style">
-      <h3 id="1-overview">1. Overview</h3>
+      <h3 id="overview">Overview</h3>
 <p>Apache Kafka is a distributed streaming platform that is used to send data between applications in real-time. It is 
 good to have an overview of some Kafka terminology before going further;</p>
 <p><strong>Topic:</strong> Messages are published to</p>
@@ -652,7 +652,7 @@ This allows applications to communicate asynchronously and fulfill high payloads
 A new score is made in our virtual football game.</p>
 <p><strong>Consumer:</strong> There will be 2 consumers. Radio and TV. They will consume our message and use it their business logic. 
 This will show us how we can get the benefit of the publisher/subscriber system.</p>
-<h3 id="2-application-setup">2. Application Setup</h3>
+<h3 id="application-setup">Application Setup</h3>
 <p>We need to prepare our environment by running Apache Kafka and its dependency on ZooKeeper. Kafka provides a simple 
 ZooKeeper server for local purposes, but in production, it should be configured separately. Let&rsquo;s stick with basics in our tutorial:</p>
 <ul>
@@ -663,7 +663,7 @@ ZooKeeper server for local purposes, but in production, it should be configured 
 <pre><code>tar -xzf kafka_2.12-2.5.0.tgz
 cd kafka_2.12-2.5.0
 </code></pre>
-<h4 id="21-start-zookeeper-server">2.1. Start ZooKeeper Server</h4>
+<h4 id="start-zookeeper-server">Start ZooKeeper Server</h4>
 <p>Kafka uses the ZooKeeper server to manage its topics. Start it:</p>
 <p><strong>Linux</strong></p>
 <pre><code>./bin/zookeeper-server-start.sh config/zookeeper.properties
@@ -671,7 +671,7 @@ cd kafka_2.12-2.5.0
 <p><strong>Windows</strong></p>
 <pre><code>.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 </code></pre>
-<h4 id="22-start-kafka-server">2.2. Start Kafka Server</h4>
+<h4 id="start-kafka-server">Start Kafka Server</h4>
 <p>Start kafka server after ZooKeeper is up &amp; ready:</p>
 <p><strong>Linux</strong></p>
 <pre><code>./bin/kafka-server-start.sh config/server.properties
@@ -679,7 +679,7 @@ cd kafka_2.12-2.5.0
 <p><strong>Windows</strong></p>
 <pre><code>.\bin\windows\kafka-server-start.bat .\config\server.properties
 </code></pre>
-<h4 id="23-create-a-topic">2.3. Create a topic</h4>
+<h4 id="create-a-topic">Create a topic</h4>
 <p>For simplicity, we are going to create a topic before our application is started. Create games topic with the following:</p>
 <p><strong>Linux</strong></p>
 <pre><code>.\bin \kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic scores
@@ -687,7 +687,7 @@ cd kafka_2.12-2.5.0
 <p><strong>Windows</strong></p>
 <pre><code>.\bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic scores
 </code></pre>
-<h4 id="24-list-topics">2.4. List topics</h4>
+<h4 id="list-topics">List topics</h4>
 <p>List topics in the Kafka, we will see scores topic is created.</p>
 <p><strong>Linux</strong></p>
 <pre><code>.\bin\kafka-topics.bat –list –bootstrap-server localhost:9092
@@ -695,7 +695,7 @@ cd kafka_2.12-2.5.0
 <p><strong>Windows</strong></p>
 <pre><code>.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
 </code></pre>
-<h4 id="25-create-the-project">2.5. Create the Project</h4>
+<h4 id="create-the-project">Create the Project</h4>
 <p>Now we can start creating our application. We need the following dependencies:</p>
 <p><strong>spring-boot-starter:</strong> Provides our core Spring libraries.</p>
 <p><strong>spring-boot-starter-web:</strong> We need it to provide a simple web server and REST operations</p>
@@ -770,7 +770,7 @@ cd kafka_2.12-2.5.0
 </code></pre>
 <p>Or you can also use Spring Initializr to generate above pom.xml quickly with the following selections:
 <img src="spring-initialzr.png" alt="spring initalizr"></p>
-<h3 id="3-application-configuration">3. Application Configuration</h3>
+<h3 id="application-configuration">Application Configuration</h3>
 <p>We need to configure our application.yml/properties with the following:</p>
 <p>By default, our Kafka server started on port 9092 when we run in our terminal. We will use the default port and 
 Serializer/Deserializer provided by Kafka. We configure our application to run on port 9000 and as the last step we 
@@ -791,7 +791,7 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
 </code></pre>
-<h3 id="4-create-a-controller">4. Create a Controller</h3>
+<h3 id="create-a-controller">Create a Controller</h3>
 <p>We provide /games/score endpoint with the name request param. This controller then delegates its job to Scores class with incoming name.</p>
 <pre><code>@RestController
 @RequestMapping(value = &quot;/games&quot;)
@@ -811,7 +811,7 @@ public class GameController {
 
 }
 </code></pre>
-<h3 id="5-create-a-producer">5. Create a Producer</h3>
+<h3 id="create-a-producer">Create a Producer</h3>
 <p>Create producer package and Scores file inside it as following:</p>
 <pre><code>@Service
 public class Scores {
@@ -837,9 +837,9 @@ public class Scores {
 easily send messages to the given topic, since our class is already in Spring Context we can use Autowired annotation 
 in our constructor and inject KafkaTemplate to our class.  Then we are calling KafkaTemplate’s send method with the 
 score topic we already created and message for the topic.</p>
-<h3 id="6-create-consumers">6. Create Consumers</h3>
+<h3 id="create-consumers">Create Consumers</h3>
 <p>We will create two Consumers for the score topic. First, create consumers package and TvConsumer class in it as follows:</p>
-<h4 id="61-first-consumer-tv">6.1. First Consumer: TV</h4>
+<h4 id="first-consumer-tv">First Consumer: TV</h4>
 <p>This class is annotated with Service annotation and its now inside Spring Context similar to the provider above. 
 We are using KafkaListener annotation provided by spring-kafka to listen given topic. It is listening to players&rsquo; 
 topics with its unique groupId which is the tv in this case. By giving different groupId’s, multiple consumers can listen to the same topic. 
@@ -857,7 +857,7 @@ public class TvConsumer {
 
 }
 </code></pre>
-<h4 id="62-second-consumer-radio">6.2. Second Consumer: Radio</h4>
+<h4 id="second-consumer-radio">Second Consumer: Radio</h4>
 <p>Similar to the TvConsumer, RadioConsumer listens to players&rsquo; topic with its groupId and logs its special message.</p>
 <pre><code>@Service
 public class RadioConsumer {
@@ -873,7 +873,7 @@ public class RadioConsumer {
 
 }
 </code></pre>
-<h3 id="7-send-a-message-to-topic">7. Send a Message To Topic</h3>
+<h3 id="send-a-message-to-topic">Send a Message To Topic</h3>
 <p>Now let&rsquo;s try to send a message to the topic using basic curl:</p>
 <pre><code>curl -X POST localhost:9000/games/score?name=&quot;Ronaldo&quot;
 </code></pre>
@@ -882,7 +882,7 @@ public class RadioConsumer {
 c.c.t.s.consumer.RadioConsumer: Ronaldo is scored a new goal!. Score is now 1-0 for the people who 
 c.c.t.s.consumer.TvConsumer: Ronaldo is scored a new goal!. This is outstanding to watch on TV. Score now 1 - 0!
 </code></pre>
-<h3 id="8-summary">8. Summary</h3>
+<h3 id="summary">Summary</h3>
 <p>In this post, we created kafka topic, send messages via a producer and retrieve them via multiple consumers from same
 topic using Spring Boot Kafka libraries.</p>
 <p>You can find source code of this project in 
