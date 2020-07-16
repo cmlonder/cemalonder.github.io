@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="Overview In this series, I&rsquo;m going to integrate a Go project with Sonar using Docker. Part 1 will be about creating a go application, writing unit tests, and generating code coverage then sending this report to SonarQube.">
+  <meta name="description" content="1. Overview Apache Kafka is a distributed streaming platform that is used to send data between applications in real-time. It is good to have an overview of some Kafka terminology before going further;">
 
   
-  <link rel="alternate" hreflang="en-us" href="http://cemalonder.com/post/go-sonar-integration-using-docker-part-1/">
+  <link rel="alternate" hreflang="en-us" href="http://cemalonder.com/post/spring-boot-kafka-tutorial/">
 
   
 
@@ -255,7 +255,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="http://cemalonder.com/post/go-sonar-integration-using-docker-part-1/">
+  <link rel="canonical" href="http://cemalonder.com/post/spring-boot-kafka-tutorial/">
 
   
   
@@ -271,15 +271,15 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Cemal Önder">
-  <meta property="og:url" content="http://cemalonder.com/post/go-sonar-integration-using-docker-part-1/">
-  <meta property="og:title" content="Go Sonar Integration Using Docker - Part 1 | Cemal Önder">
-  <meta property="og:description" content="Overview In this series, I&rsquo;m going to integrate a Go project with Sonar using Docker. Part 1 will be about creating a go application, writing unit tests, and generating code coverage then sending this report to SonarQube."><meta property="og:image" content="http://cemalonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="http://cemalonder.com/post/spring-boot-kafka-tutorial/">
+  <meta property="og:title" content="Spring Boot Kafka Tutorial | Cemal Önder">
+  <meta property="og:description" content="1. Overview Apache Kafka is a distributed streaming platform that is used to send data between applications in real-time. It is good to have an overview of some Kafka terminology before going further;"><meta property="og:image" content="http://cemalonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="http://cemalonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2020-07-12T01:28:56&#43;03:00">
+      <meta property="article:published_time" content="2020-07-17T01:11:38&#43;03:00">
     
-    <meta property="article:modified_time" content="2020-07-12T01:28:56&#43;03:00">
+    <meta property="article:modified_time" content="2020-07-17T01:11:38&#43;03:00">
   
 
   
@@ -303,12 +303,12 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://cemalonder.com/post/go-sonar-integration-using-docker-part-1/"
+    "@id": "http://cemalonder.com/post/spring-boot-kafka-tutorial/"
   },
-  "headline": "Go Sonar Integration Using Docker - Part 1",
+  "headline": "Spring Boot Kafka Tutorial",
   
-  "datePublished": "2020-07-12T01:28:56+03:00",
-  "dateModified": "2020-07-12T01:28:56+03:00",
+  "datePublished": "2020-07-17T01:11:38+03:00",
+  "dateModified": "2020-07-17T01:11:38+03:00",
   
   "author": {
     "@type": "Person",
@@ -323,7 +323,7 @@
       "url": "http://cemalonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "Overview In this series, I\u0026rsquo;m going to integrate a Go project with Sonar using Docker. Part 1 will be about creating a go application, writing unit tests, and generating code coverage then sending this report to SonarQube."
+  "description": "1. Overview Apache Kafka is a distributed streaming platform that is used to send data between applications in real-time. It is good to have an overview of some Kafka terminology before going further;"
 }
 </script>
 
@@ -371,7 +371,7 @@
 
 
 
-  <title>Go Sonar Integration Using Docker - Part 1 | Cemal Önder</title>
+  <title>Spring Boot Kafka Tutorial | Cemal Önder</title>
 
 </head>
 <body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
@@ -560,7 +560,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Go Sonar Integration Using Docker - Part 1</h1>
+  <h1>Spring Boot Kafka Tutorial</h1>
 
   
 
@@ -589,7 +589,7 @@
     
       
     
-    Jul 12, 2020
+    Jul 17, 2020
   </span>
   
 
@@ -598,7 +598,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    7 min read
+    6 min read
   </span>
   
 
@@ -610,7 +610,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/category/integration/">integration</a>, <a href="/category/continuous-integration/">continuous integration</a>, <a href="/category/code-quality/">code quality</a></span>
+    <i class="fas fa-folder mr-1"></i><a href="/category/integration/">integration</a></span>
   
 
 </div>
@@ -638,243 +638,255 @@
   <div class="article-container">
 
     <div class="article-style">
-      <h3 id="overview">Overview</h3>
-<p>In this series, I&rsquo;m going to integrate a Go project with Sonar using Docker.
-
-<a href="/post/go-sonar-integration-using-docker-part-1">Part 1</a> will be about creating a go application, writing unit tests, and generating code coverage then sending this
-report to SonarQube.
-<a href="">Part 2 - TBD</a> will be about using Sonar to fail pipeline based on the Quality report.</p>
-<h3 id="1-create-a-simple-todo-app">1. Create a Simple Todo App</h3>
-<p>Let&rsquo;s first create an empty project and initialize go modules.</p>
-<pre><code>mkdir go-dockerized-coverage
-cd go-dockerized-coverage
-go mod init cemalonder.com/go/todo
-</code></pre>
-<p>Create a todo folder and todo.go file</p>
-<pre><code>mkdir todo
-touch todo.go
-</code></pre>
-<p>And write a simple Todo App with 2 functions; <strong>Add</strong> and <strong>Complete</strong>.</p>
-<pre><code>// Package todo provides a simple todo application
-package todo
-
-import &quot;errors&quot;
-
-// Todo representation of todo with id, title and completed status
-type Todo struct {
-   Id       int
-   Title    string
-   Completed bool
-}
-
-// TodoApp holds todo list and id counter
-type TodoApp struct {
-   todos map[int]Todo
-   id int
-}
-
-// CreateTodoApp creates a new TodoApp by initializing todo list and id counter
-func CreateTodoApp() TodoApp {
-   todoApp := TodoApp{}
-   todoApp.todos = make(map[int]Todo)
-   todoApp.id = 0
-   return todoApp
-}
-
-// Add adds a new todo with given title and returns created todo with a new id
-func (app *TodoApp) Add(title string) Todo {
-   app.id = app.id + 1
-   app.todos[app.id] = Todo{app.id, title, false}
-   return app.todos[app.id]
-}
-
-// Complete completes a todo with given id and
-// returns todo not found exception if todo with given id is not found
-func (app *TodoApp) Complete(id int) error {
-   if todo, ok := app.todos[id]; ok {
-      todo.Completed = true
-      app.todos[id] = todo
-      return nil
-   } else {
-      return errors.New(&quot;todo not found&quot;)
-   }
-}
-</code></pre>
-<h3 id="2-write-unit-tests">2. Write Unit Tests</h3>
-<p>Now let&rsquo;s create some unit tests for our Todo App. My Complete function contains some business logic which I can write
-unit tests. I will consider business cases first, then implement them;</p>
+      <h3 id="1-overview">1. Overview</h3>
+<p>Apache Kafka is a distributed streaming platform that is used to send data between applications in real-time. It is 
+good to have an overview of some Kafka terminology before going further;</p>
+<p><strong>Topic:</strong> Messages are published to</p>
+<p><strong>Producer:</strong> An application who can publish its messages to a topic</p>
+<p><strong>Consumer:</strong> An application that can consume messages from its subscribed topic.
+Most simply, a producer writes messages to topics, and consumers can read messages from its subscribed topics. 
+This allows applications to communicate asynchronously and fulfill high payloads.</p>
+<p>In this tutorial we are going to create a game announcement system;</p>
+<p><strong>Topic:</strong> Games</p>
+<p><strong>Producer:</strong> /games/score/?name=${playerName} endpoint where we are going to call with curl request when a 
+A new score is made in our virtual football game.</p>
+<p><strong>Consumer:</strong> There will be 2 consumers. Radio and TV. They will consume our message and use it their business logic. 
+This will show us how we can get the benefit of the publisher/subscriber system.</p>
+<h3 id="2-application-setup">2. Application Setup</h3>
+<p>We need to prepare our environment by running Apache Kafka and its dependency on ZooKeeper. Kafka provides a simple 
+ZooKeeper server for local purposes, but in production, it should be configured separately. Let&rsquo;s stick with basics in our tutorial:</p>
 <ul>
-<li>When I complete a todo which exists, I expect it&rsquo;s completed state is true</li>
-<li>When I complete a todo which does not exist, I expect an error</li>
+<li>Download Apache Kafka 
+<a href="https://kafka.apache.org/quickstart" target="_blank" rel="noopener">here</a></li>
+<li>Untar it:</li>
 </ul>
-<pre><code>package todo_test
+<pre><code>tar -xzf kafka_2.12-2.5.0.tgz
+cd kafka_2.12-2.5.0
+</code></pre>
+<h4 id="21-start-zookeeper-server">2.1. Start ZooKeeper Server</h4>
+<p>Kafka uses the ZooKeeper server to manage its topics. Start it:</p>
+<p><strong>Linux</strong></p>
+<pre><code>./bin/zookeeper-server-start.sh config/zookeeper.properties
+</code></pre>
+<p><strong>Windows</strong></p>
+<pre><code>.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+</code></pre>
+<h4 id="22-start-kafka-server">2.2. Start Kafka Server</h4>
+<p>Start kafka server after ZooKeeper is up &amp; ready:</p>
+<p><strong>Linux</strong></p>
+<pre><code>./bin/kafka-server-start.sh config/server.properties
+</code></pre>
+<p><strong>Windows</strong></p>
+<pre><code>.\bin\windows\kafka-server-start.bat .\config\server.properties
+</code></pre>
+<h4 id="23-create-a-topic">2.3. Create a topic</h4>
+<p>For simplicity, we are going to create a topic before our application is started. Create games topic with the following:</p>
+<p><strong>Linux</strong></p>
+<pre><code>.\bin \kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic scores
+</code></pre>
+<p><strong>Windows</strong></p>
+<pre><code>.\bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic scores
+</code></pre>
+<h4 id="24-list-topics">2.4. List topics</h4>
+<p>List topics in the Kafka, we will see scores topic is created.</p>
+<p><strong>Linux</strong></p>
+<pre><code>.\bin\kafka-topics.bat –list –bootstrap-server localhost:9092
+</code></pre>
+<p><strong>Windows</strong></p>
+<pre><code>.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
+</code></pre>
+<h4 id="25-create-the-project">2.5. Create the Project</h4>
+<p>Now we can start creating our application. We need the following dependencies:</p>
+<p><strong>spring-boot-starter:</strong> Provides our core Spring libraries.</p>
+<p><strong>spring-boot-starter-web:</strong> We need it to provide a simple web server and REST operations</p>
+<p><strong>spring-kafka:</strong> Wraps Kafka to abstract messaging operations</p>
+<p><strong>spring-boot-starter-test:</strong> For core test libraries</p>
+<p><strong>spring-kafka-test:</strong> provides testing utils for Kafka</p>
+<p>Our final pom.xml:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+       xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+   &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+   &lt;parent&gt;
+      &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+      &lt;artifactId&gt;spring-boot-starter-parent&lt;/artifactId&gt;
+      &lt;version&gt;2.2.6.RELEASE&lt;/version&gt;
+      &lt;relativePath/&gt; &lt;!-- lookup parent from repository --&gt;
+   &lt;/parent&gt;
+   &lt;groupId&gt;com.cemalonder.tutorials&lt;/groupId&gt;
+   &lt;artifactId&gt;spring-boot-kafka-tutorial&lt;/artifactId&gt;
+   &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
+   &lt;name&gt;spring-boot-kafka-tutorial&lt;/name&gt;
+   &lt;description&gt;Spring Boot kafka integration tutorial&lt;/description&gt;
 
-import (
-   &quot;testing&quot;
-)
+   &lt;properties&gt;
+      &lt;java.version&gt;1.8&lt;/java.version&gt;
+   &lt;/properties&gt;
 
-func TestCompleteForFoundTodo(t *testing.T) {
-   app := CreateTodoApp()
-   todo := app.Add(&quot;Wake up early&quot;)
-   if todo.Completed {
-      t.Error(&quot;Expected completed is false, but it is true&quot;)
-   }
+   &lt;dependencies&gt;
+      &lt;dependency&gt;
+         &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+         &lt;artifactId&gt;spring-boot-starter&lt;/artifactId&gt;
+      &lt;/dependency&gt;
 
-   err := app.Complete(todo.Id)
+      &lt;dependency&gt;
+         &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+         &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
+      &lt;/dependency&gt;
 
-   if err != nil {
-      t.Errorf(&quot;Expected error is nil, but it is %v&quot;, err)
-   }
+      &lt;dependency&gt;
+         &lt;groupId&gt;org.springframework.kafka&lt;/groupId&gt;
+         &lt;artifactId&gt;spring-kafka&lt;/artifactId&gt;
+      &lt;/dependency&gt;
 
-   if todo.Completed {
-      t.Error(&quot;Expected completed is true, but it is false&quot;)
-   }
+      &lt;dependency&gt;
+         &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+         &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;
+         &lt;scope&gt;test&lt;/scope&gt;
+         &lt;exclusions&gt;
+            &lt;exclusion&gt;
+               &lt;groupId&gt;org.junit.vintage&lt;/groupId&gt;
+               &lt;artifactId&gt;junit-vintage-engine&lt;/artifactId&gt;
+            &lt;/exclusion&gt;
+         &lt;/exclusions&gt;
+      &lt;/dependency&gt;
+      &lt;dependency&gt;
+         &lt;groupId&gt;org.springframework.kafka&lt;/groupId&gt;
+         &lt;artifactId&gt;spring-kafka-test&lt;/artifactId&gt;
+         &lt;scope&gt;test&lt;/scope&gt;
+      &lt;/dependency&gt;
+   &lt;/dependencies&gt;
+
+   &lt;build&gt;
+      &lt;plugins&gt;
+         &lt;plugin&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
+         &lt;/plugin&gt;
+      &lt;/plugins&gt;
+   &lt;/build&gt;
+
+&lt;/project&gt;
+</code></pre>
+<p>Or you can also use Spring Initializr to generate above pom.xml quickly with the following selections:
+<img src="spring-initialzr.png" alt="spring initalizr"></p>
+<h3 id="3-application-configuration">3. Application Configuration</h3>
+<p>We need to configure our application.yml/properties with the following:</p>
+<p>By default, our Kafka server started on port 9092 when we run in our terminal. We will use the default port and 
+Serializer/Deserializer provided by Kafka. We configure our application to run on port 9000 and as the last step we 
+give a group-id as a default group-id but we will change it per Consumer in the following steps.</p>
+<pre><code>server:
+  port: 9000
+
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: group-id
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+</code></pre>
+<h3 id="4-create-a-controller">4. Create a Controller</h3>
+<p>We provide /games/score endpoint with the name request param. This controller then delegates its job to Scores class with incoming name.</p>
+<pre><code>@RestController
+@RequestMapping(value = &quot;/games&quot;)
+public class GameController {
+
+  private final Scores scores;
+
+  @Autowired
+  public GameController(Scores scores) {
+    this.scores = scores;
+  }
+
+  @PostMapping(value = &quot;/score&quot;)
+  public void makeAnnouncement(@RequestParam(&quot;name&quot;) String name) {
+    this.scores.sendMessage(name);
+  }
+
 }
+</code></pre>
+<h3 id="5-create-a-producer">5. Create a Producer</h3>
+<p>Create producer package and Scores file inside it as following:</p>
+<pre><code>@Service
+public class Scores {
 
-func TestCompleteForNotFoundTodo(t *testing.T) {
-   app := CreateTodoApp()
-   err := app.Complete(1)
-   if err == nil {
-      t.Errorf(&quot;Expected error is not nil, but it is %v&quot;, err)
-   }
+  private final Logger logger = LoggerFactory.getLogger(Scores.class);
+  private static final String TOPIC = &quot;scores&quot;;
+
+  private final KafkaTemplate&lt;String, String&gt; kafkaTemplate;
+
+  @Autowired
+  public Scores(KafkaTemplate&lt;String, String&gt; kafkaTemplate) {
+    this.kafkaTemplate = kafkaTemplate;
+  }
+
+  public void sendMessage(String name) {
+    logger.info(&quot;Publishing message to {} topic&quot;, TOPIC);
+    this.kafkaTemplate.send(TOPIC, name + &quot; is scored a new goal!&quot;);
+  }
 
 }
 </code></pre>
-<p>I&rsquo;m following some testing conventions above which starts with TestXxx(*testing.T). And also my package
-name is todo_test. Since this post is about integrating Go with Sonar I will let keep them for another post, let&rsquo;s
-continue with generating code coverage.</p>
-<h3 id="3-generate-code-coverage">3. Generate Code Coverage</h3>
-<p>Let&rsquo;s run and generate coverage for our project:</p>
-<pre><code>go test ./... -v -coverprofile=coverage.out -covermode=count -coverpkg=./...
+<p>This class is annotated with Service annotation and it&rsquo;s now inside Spring Context. We are using KafkaTemplate to 
+easily send messages to the given topic, since our class is already in Spring Context we can use Autowired annotation 
+in our constructor and inject KafkaTemplate to our class.  Then we are calling KafkaTemplate’s send method with the 
+score topic we already created and message for the topic.</p>
+<h3 id="6-create-consumers">6. Create Consumers</h3>
+<p>We will create two Consumers for the score topic. First, create consumers package and TvConsumer class in it as follows:</p>
+<h4 id="61-first-consumer-tv">6.1. First Consumer: TV</h4>
+<p>This class is annotated with Service annotation and its now inside Spring Context similar to the provider above. 
+We are using KafkaListener annotation provided by spring-kafka to listen given topic. It is listening to players&rsquo; 
+topics with its unique groupId which is the tv in this case. By giving different groupId’s, multiple consumers can listen to the same topic. 
+In the end, the TvConsumer class logs a simple message that shows it is handled by the TV.</p>
+<pre><code>@Service
+public class TvConsumer {
+
+  private final Logger logger = LoggerFactory.getLogger(TvConsumer.class);
+  private Integer score = 0;
+
+  @KafkaListener(topics = &quot;scores&quot;, groupId = &quot;tv&quot;)
+  public void consume(String message) {
+    logger.info(&quot;{}. This is outstanding to watch on TV. Score now {} - 0!&quot;, message, ++score);
+  }
+
+}
 </code></pre>
-<p>And if summarize what is above command and its flag is doing:</p>
-<ul>
-<li><strong>go test ./&hellip;</strong> = running all the tests in current and all sub-folders</li>
-<li><strong>-v</strong> = print full output</li>
-<li><strong>-coverprofile=coverage.out</strong> = write coverage to the given file, here we write to coverage.out</li>
-<li><strong>-covermode=count</strong> = Sets the mode for coverage analyses, here we set to count which shows how many times statements are run</li>
-<li><strong>-coverpkg=./&hellip;</strong> = apply coverage for all matching pattern, here we applied current and all sub-folders</li>
-</ul>
-<p>For the detailed list of all flags for go test command, see 
-<a href="https://golang.org/pkg/cmd/go/internal/test/" target="_blank" rel="noopener">here</a></p>
-<p>Now we have a coverage.out generated in the root of the project content like this:</p>
-<pre><code> mode: count
-  cemalonder.com/go/todo/main.go:3.14,4.2 0 0
-  cemalonder.com/go/todo/todo/todo.go:20.30,25.2 4 2
-  cemalonder.com/go/todo/todo/todo.go:28.44,32.2 3 1
-  cemalonder.com/go/todo/todo/todo.go:36.44,37.35 1 2
-  cemalonder.com/go/todo/todo/todo.go:37.35,41.3 3 1
-  cemalonder.com/go/todo/todo/todo.go:41.8,43.3 1 1
+<h4 id="62-second-consumer-radio">6.2. Second Consumer: Radio</h4>
+<p>Similar to the TvConsumer, RadioConsumer listens to players&rsquo; topic with its groupId and logs its special message.</p>
+<pre><code>@Service
+public class RadioConsumer {
+
+  private final Logger logger = LoggerFactory.getLogger(RadioConsumer.class);
+  private Integer score = 0;
+
+  @KafkaListener(topics = &quot;scores&quot;, groupId = &quot;radio&quot;)
+  public void consume(String message) {
+    logger.info(&quot;{}. Score is now {}-0 for the people who just turned on their Radios!&quot;, message,
+        ++score);
+  }
+
+}
 </code></pre>
-<p>The next step is sending this coverage to Sonar so we can visualize it.</p>
-<h3 id="4-start-local-sonarqube">4. Start Local SonarQube</h3>
-<p>Even you will send your reports to a Sonar instance which you have in your company&rsquo;s server, let&rsquo;s try everything first
-locally. It will be pretty easy using Docker.</p>
-<p>Start a new SonarQube container:</p>
-<pre><code>docker run --rm -p 9000:9000 sonarqube
+<h3 id="7-send-a-message-to-topic">7. Send a Message To Topic</h3>
+<p>Now let&rsquo;s try to send a message to the topic using basic curl:</p>
+<pre><code>curl -X POST localhost:9000/games/score?name=&quot;Ronaldo&quot;
 </code></pre>
-<p>If we summarize above command;</p>
-<ul>
-<li>Installs <strong>sonarqube</strong> image if it does not exist locally</li>
-<li>Creates a container from this image</li>
-<li>Starts this container</li>
-<li>Forwards internal 9000 port of docker to host (localhost in this case) so you can access it via [localhost:9000]</li>
-<li>Removes container (&ndash;rm) when it is stopped so you don&rsquo;t run out of space (you still have the image)</li>
-</ul>
-<p>Now we have a locally running sonarqube with no persistency (in-memory), so you will lose your pushed reports when you
-restart your container but it is okay for our case since we want to test our reports.</p>
-<p>If you visit 
-<a href="">localhost:9000</a> in your browser you will see local SonarQube instance with 0 projects.</p>
-<p><img src="sonarqube.png" alt="sonarqube"></p>
-<p>We need to push our project to SonarQube. Let&rsquo;s continue with the next step.</p>
-<h3 id="5-configure-sonar-in-project">5. Configure Sonar in Project</h3>
-<p>We need some configuration in our project before we push it to the SonarQube. In the next step, we will be using SonarScanner
-which requires sonar-project.properties configured in the project. By default, it should be located at the root of the project.
-Let&rsquo;s create <strong>sonar-project.properties</strong> in the root of the project and</p>
-<pre><code>touch sonar-project.properties
+<p>And let&rsquo;s see the results in our console:</p>
+<pre><code>c.c.t.s.producer.Scores: Publishing message to scores topic
+c.c.t.s.consumer.RadioConsumer: Ronaldo is scored a new goal!. Score is now 1-0 for the people who 
+c.c.t.s.consumer.TvConsumer: Ronaldo is scored a new goal!. This is outstanding to watch on TV. Score now 1 - 0!
 </code></pre>
-<p>And its content is:</p>
-<pre><code>sonar.language=go
-# This should be unique in SonarQube
-sonar.projectKey=simple-todo-app
-sonar.projectName=Simple Todo Application
-sonar.go.coverage.reportPaths=coverage.out
-sonar.exclusions=**/*_test.go
-</code></pre>
-<p>And if we summarize the properties used above:</p>
-<ul>
-<li><strong>sonar.language</strong> = we are setting our language but SonarQube also capable of guessing it</li>
-<li><strong>sonar.projectKey</strong> = this should be unique in your SonarQube instance</li>
-<li><strong>sonar.projectName</strong> = this will be shown in the UI as a name of our project</li>
-<li><strong>sonar.go.coverage.reportPaths</strong> = we show our <strong>coverage.out</strong> which we generated in 
-<a href="#2-write-unit-tests">write unit tests</a> step</li>
-<li><strong>sonar.exclusions</strong> = we are excluding _test.go files since we don&rsquo;t want to get coverage of tests itself
-All of the properties can be found 
-<a href="https://docs.sonarqube.org/latest/analysis/analysis-parameters/" target="_blank" rel="noopener">here</a>.</li>
-</ul>
-<p>We have configured our project. The last step is pushing these to the SonarQube instance.</p>
-<h3 id="6-send-coverage-report-to-sonarqube-using-sonarscanner">6. Send Coverage Report to SonarQube using SonarScanner</h3>
-<p>
-<a href="https://github.com/SonarSource/sonar-scanner-cli" target="_blank" rel="noopener">SonarScanner</a> is a tool used to run code analysis on SonarQube instance.
-To use this we should install it locally and run against our project which has code coverage generated and sonar-project.properties
-configured. But instead of installing locally, I would like to do this step also with Docker since SonarQube officially provides a 
-<a href="https://hub.docker.com/r/sonarsource/sonar-scanner-cli" target="_blank" rel="noopener">docker image</a> for this.</p>
-<p>Before running the sonar-scanner-cli docker command you should get your local IP since we will need it in the next step.
-For this type <code>ipconfig</code> if you are working in Windows or <code>ifconfig</code> if you are in a Linux based Operating System. Then
-take note of your <strong>IPv4 Adress</strong> for the valid Adapter, in my case I&rsquo;m working via Wireless so I take note of my 
-<strong>Wireless Lan adapter Wi-Fi</strong> which is 192.168.0.11 as follows</p>
-<p><img src="ip-address.png" alt="ip address"></p>
-<p>Now run following command in the shell (run it in PowerShell if you are in windows otherwise ${PWD} does not work)</p>
-<pre><code> docker run --rm -e SONAR_HOST_URL=http://192.168.0.11:9000 -v ${PWD}:/usr/src sonarsource/sonar-scanner-cli
-</code></pre>
-<p>And if we summarize above command:</p>
-<ul>
-<li>Installs <strong>sonarsource/sonar-scanner-cli</strong> image if it does not exist locally</li>
-<li>Creates a container from this image</li>
-<li>Starts this container</li>
-<li>Sets <strong>SONAR_HOST_URL</strong> environment variable to show where SonarQube runs</li>
-<li>Creates a volume from <strong>/usr/src</strong> to your local (${PWD} or give your absolute path like /c/yourUser/yourProject) so
-sonar-scanner-cli can use your local project and its properties (sonar-project.properties)</li>
-<li>Removes container (&ndash;rm) when it is stopped so you don&rsquo;t run out of space (you still have the image)</li>
-</ul>
-<p>In your terminal you should see an <strong>EXECUTION SUCCESS</strong> message with a log similar to this:</p>
-<pre><code>...More logs...
-INFO: Analysis report generated in 134ms, dir size=80 KB
-INFO: Analysis report compressed in 681ms, zip size=12 KB
-INFO: Analysis report uploaded in 260ms
-INFO: ANALYSIS SUCCESSFUL, you can browse http://192.168.0.11:9000/dashboard?id=simple-todo-app
-INFO: Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
-INFO: More about the report processing at http://192.168.0.11:9000/api/ce/task?id=AXNFIP_bMJij3EBEF7zK
-INFO: Analysis total time: 5.375 s
-INFO: ------------------------------------------------------------------------
-INFO: EXECUTION SUCCESS
-INFO: ------------------------------------------------------------------------
-INFO: Total time: 12.923s
-INFO: Final Memory: 13M/47M
-INFO: ------------------------------------------------------------------------
-</code></pre>
-<p><strong>NOTE:</strong> You can not use 
-<a href="">http://localhost:9000</a> instead of 
-<a href="">http://192.168.0.11:9000</a> since sonar-scanner-cli Docker container runs
-on its host and <strong>localhost</strong> for that container is not same address with localhost of yours (at least in Windows, Mac&rsquo;s 
-docker daemon may be editing etc/hosts files so users in Mac MAY be using localhost even they are working in Docker)</p>
-<p>Now if you visit 
-<a href="">http://localhost:9000</a> again, you will see there is 1 project now. Click on that and here is our report:</p>
-<p><img src="sonar-analyse.png" alt="sonar analyse"></p>
-<p>Since Sonar has default Quality Gates configured, I&rsquo;m now passing all of the scores and we have <strong>Passed</strong> status.</p>
-<h3 id="summary">Summary</h3>
-<p>In this post, we write a simple Go project, generate coverage report, configure SonarScanner, and analyze our project in Sonar.
-The 
-<a href="">next part - TBD</a> will be about integrating this project to Jenkins and reject our pipeline based on the project quality report.</p>
+<h3 id="8-summary">8. Summary</h3>
+<p>In this post, we created kafka topic, send messages via a producer and retrieve them via multiple consumers from same
+topic using Spring Boot Kafka libraries.</p>
 <p>You can find source code of this project in 
-<a href="https://github.com/cmlonder/go-dockerized-coverage" target="_blank" rel="noopener">Github</a></p>
-<h3 id="resources">Resources</h3>
-<ul>
-<li>
-<a href="">https://docs.sonarqube.org/latest</a></li>
-<li>
-<a href="">https://blog.golang.org/cover</a></li>
-</ul>
+<a href="https://github.com/cmlonder/spring-boot-kafka-tutorial" target="_blank" rel="noopener">Github</a></p>
 
     </div>
 
@@ -887,11 +899,9 @@ The
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tag/docker/">docker</a>
+  <a class="badge badge-light" href="/tag/kafka/">kafka</a>
   
-  <a class="badge badge-light" href="/tag/go/">go</a>
-  
-  <a class="badge badge-light" href="/tag/sonar/">sonar</a>
+  <a class="badge badge-light" href="/tag/spring-boot/">spring boot</a>
   
 </div>
 
@@ -908,7 +918,7 @@ The
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=http://cemalonder.com/post/go-sonar-integration-using-docker-part-1/&amp;text=Go%20Sonar%20Integration%20Using%20Docker%20-%20Part%201" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=http://cemalonder.com/post/spring-boot-kafka-tutorial/&amp;text=Spring%20Boot%20Kafka%20Tutorial" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -921,7 +931,7 @@ The
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=http://cemalonder.com/post/go-sonar-integration-using-docker-part-1/&amp;t=Go%20Sonar%20Integration%20Using%20Docker%20-%20Part%201" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=http://cemalonder.com/post/spring-boot-kafka-tutorial/&amp;t=Spring%20Boot%20Kafka%20Tutorial" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -934,7 +944,7 @@ The
       
       
       <li>
-        <a href="mailto:?subject=Go%20Sonar%20Integration%20Using%20Docker%20-%20Part%201&amp;body=http://cemalonder.com/post/go-sonar-integration-using-docker-part-1/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Spring%20Boot%20Kafka%20Tutorial&amp;body=http://cemalonder.com/post/spring-boot-kafka-tutorial/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -947,7 +957,7 @@ The
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=http://cemalonder.com/post/go-sonar-integration-using-docker-part-1/&amp;title=Go%20Sonar%20Integration%20Using%20Docker%20-%20Part%201" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=http://cemalonder.com/post/spring-boot-kafka-tutorial/&amp;title=Spring%20Boot%20Kafka%20Tutorial" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -960,7 +970,7 @@ The
       
       
       <li>
-        <a href="whatsapp://send?text=Go%20Sonar%20Integration%20Using%20Docker%20-%20Part%201%20http://cemalonder.com/post/go-sonar-integration-using-docker-part-1/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Spring%20Boot%20Kafka%20Tutorial%20http://cemalonder.com/post/spring-boot-kafka-tutorial/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -973,7 +983,7 @@ The
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=http://cemalonder.com/post/go-sonar-integration-using-docker-part-1/&amp;title=Go%20Sonar%20Integration%20Using%20Docker%20-%20Part%201" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=http://cemalonder.com/post/spring-boot-kafka-tutorial/&amp;title=Spring%20Boot%20Kafka%20Tutorial" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1112,7 +1122,7 @@ The
       
       <li><a href="/post/github-integration-with-local-jenkins/">Github Integration With Local Jenkins</a></li>
       
-      <li><a href="/post/spring-boot-kafka-tutorial/">Spring Boot Kafka Tutorial</a></li>
+      <li><a href="/post/go-sonar-integration-using-docker-part-1/">Go Sonar Integration Using Docker - Part 1</a></li>
       
     </ul>
   </div>
