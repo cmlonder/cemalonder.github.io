@@ -27,8 +27,7 @@
   
     
   
-  <meta name="description" content="Overview Sometimes it is very beneficial to have your own Jenkins:
- You have a ready Jenkins in your company but you are just learning Jenkins and you are pushing every little change to the repository which makes them dirty You don&rsquo;t have a ready Jenkins and want to give it a try  Jenkins works with repositories which makes it a great tool for CI &amp; CD.">
+  <meta name="description" content="In this article, we are going to setup local Jenkins and integrate it with Github Repository which will trigger local Jenkins when we push some changes.">
 
   
   <link rel="alternate" hreflang="en-us" href="http://cemalonder.com/post/github-integration-with-local-jenkins/">
@@ -274,8 +273,7 @@
   <meta property="og:site_name" content="Cemal Önder">
   <meta property="og:url" content="http://cemalonder.com/post/github-integration-with-local-jenkins/">
   <meta property="og:title" content="Github Integration With Local Jenkins | Cemal Önder">
-  <meta property="og:description" content="Overview Sometimes it is very beneficial to have your own Jenkins:
- You have a ready Jenkins in your company but you are just learning Jenkins and you are pushing every little change to the repository which makes them dirty You don&rsquo;t have a ready Jenkins and want to give it a try  Jenkins works with repositories which makes it a great tool for CI &amp; CD."><meta property="og:image" content="http://cemalonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:description" content="In this article, we are going to setup local Jenkins and integrate it with Github Repository which will trigger local Jenkins when we push some changes."><meta property="og:image" content="http://cemalonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="http://cemalonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
@@ -325,7 +323,7 @@
       "url": "http://cemalonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "Overview Sometimes it is very beneficial to have your own Jenkins:\n You have a ready Jenkins in your company but you are just learning Jenkins and you are pushing every little change to the repository which makes them dirty You don\u0026rsquo;t have a ready Jenkins and want to give it a try  Jenkins works with repositories which makes it a great tool for CI \u0026amp; CD."
+  "description": "In this article, we are going to setup local Jenkins and integrate it with Github Repository which will trigger local Jenkins when we push some changes."
 }
 </script>
 
@@ -640,7 +638,7 @@
   <div class="article-container">
 
     <div class="article-style">
-      <h3 id="overview">Overview</h3>
+      <h3 id="1-overview">1. Overview</h3>
 <p>Sometimes it is very beneficial to have your own Jenkins:</p>
 <ul>
 <li>You have a ready Jenkins in your company but you are just learning Jenkins and you are pushing every little change
@@ -654,7 +652,7 @@ are using Jenkins locally since <strong>Github can not access your localhost:808
 you own where this is not always possible.</p>
 <p>In this article, we are going to set up everything from scratch with a basic &amp; quick way and <strong>we will integrate Github with
 locally running Jenkins.</strong></p>
-<h3 id="install-jenkins-with-docker">Install Jenkins with Docker</h3>
+<h3 id="2-install-jenkins-with-docker">2. Install Jenkins with Docker</h3>
 <p>Docker is the easiest way to start using Jenkins. Here are the steps for downloading the docker image, starting a new container
 and setting up Jenkins:</p>
 <p><strong>1.</strong> Start local Jenkins by running following command:</p>
@@ -673,7 +671,7 @@ where we are going to use it in the next steps.</p>
 <p><img src="create_admin.png" alt="create admin"></p>
 <p><strong>5.</strong> Finish the installation by applying the default URL since we will keep using localhost.</p>
 <p><img src="installation_finish.png" alt="finish installation"></p>
-<h3 id="create-a-project-in-github">Create a Project in Github</h3>
+<h3 id="3-create-a-project-in-github">3. Create a Project in Github</h3>
 <p>You may already have a project, for the tutorial purpose let&rsquo;s also create a new fresh project <strong>Github-integration-with-local-jenkins</strong>
 which is located 
 <a href="https://github.com/cmlonder/github-integration-with-local-jenkins" target="_blank" rel="noopener">here</a></p>
@@ -690,7 +688,7 @@ which is located
     }
 }
 </code></pre>
-<h3 id="create-an-access-token-in-github">Create an Access Token in Github</h3>
+<h3 id="4-create-an-access-token-in-github">4. Create an Access Token in Github</h3>
 <p>Jenkins will try to reach Github for a bunch of operations where it will need some access token. Let&rsquo;s create this token:</p>
 <p><strong>1.</strong> Click on your profile icon then select <strong>Settings</strong> from the dropdown then select <strong>Developer Settings</strong> from the
 left navigation panel</p>
@@ -703,7 +701,7 @@ Select them, give them a note, and generate the token.</p>
 <p><strong>4.</strong> Don&rsquo;t forget to <strong>TAKE NOT</strong> of this generated token since you will not able to see it again.</p>
 <p><img src="access_token.png" alt="access token"></p>
 <p>Now we are ready to create a job in Jenkins. We will use this token while configuring Github in the Jenkins.</p>
-<h3 id="configure-github-server-in-jenkins">Configure Github Server in Jenkins</h3>
+<h3 id="5-configure-github-server-in-jenkins">5. Configure Github Server in Jenkins</h3>
 <p>Before creating a new job, let&rsquo;s add the token we generated in Github to our Jenkins.</p>
 <p><strong>1.</strong> Go to Jenkins Home and click on <strong>Manage Jenkins</strong> then select <strong>Configure System</strong></p>
 <p><img src="manage_jenkins.png" alt="manage jenkins"></p>
@@ -722,7 +720,7 @@ A response should appear on the screen which shows remaining API limits for your
 API rate limit information, but it is enough for learning purposes.</p>
 <p><img src="save_github_server.png" alt="save Github server"></p>
 <p>We successfully added a credential to access Github APIs. Let&rsquo;s continue with creating a new job.</p>
-<h3 id="create-a-new-job">Create a New Job</h3>
+<h3 id="6-create-a-new-job">6. Create a New Job</h3>
 <p>We need to create a job in Jenkins by setting up our project URL and giving Github access so that Jenkins can fetch our
 project to build it within our pipeline. Let&rsquo;s set it up step by step</p>
 <p><strong>1.</strong> Click on create a new item
@@ -736,7 +734,7 @@ project to build it within our pipeline. Let&rsquo;s set it up step by step</p>
 <p><strong>4.</strong> Click on <strong>Pipeline</strong> and select <strong>Pipeline script from SCM</strong> from Definition dropdown. This configures Jenkins 
 job that we will use instructions from our project&rsquo;s  Jenkinsfile to run the pipeline. Enter your
 <em>&hellip;git</em> repository URL.</p>
-<h3 id="expose-your-localhost-with-ngrok">Expose Your Localhost with NGROK</h3>
+<h3 id="7-expose-your-localhost-with-ngrok">7. Expose Your Localhost with NGROK</h3>
 <p>As mentioned at the beginning of the article, we need a way to Github to communicate with our local running Jenkins. There is a way
 for it; exposing your local with a tunnel to the web. <strong>NGROK</strong> is the easiest way for this which makes it available with
 a simple command. But it <strong>SHOULD NOT</strong> be used for production purposes.</p>
@@ -750,7 +748,7 @@ the exposed URL like following in your terminal:</p>
 <p><img src="ngrok.png" alt="ngrok"></p>
 <p>Copy the Http forwarding URL and paste it to your browser, you will be redirected to your local Jenkins server. We are ready
 to go to the next step, configuring Github for webhooks with Jenkins.</p>
-<h3 id="configure-webhook-url-for-your-project-in-github">Configure Webhook URL for your Project in Github</h3>
+<h3 id="8-configure-webhook-url-for-your-project-in-github">8. Configure Webhook URL for your Project in Github</h3>
 <p>Go to your project page and click on <strong>Settings</strong> tab. Then click <strong>Webhooks</strong> from the left navigation panel and
 click on <strong>Add webhook</strong>. Now you should see the following screen:</p>
 <p><img src="add_webhook.png" alt="add webhook"></p>
@@ -763,7 +761,7 @@ for <strong>POST</strong> requests)</p>
 to configure detailed hooks, select <strong>Let me select individual events</strong> and then you can pick the events like Pull Requests, Pushes,
 Releases etc. to trigger calling your Jenkins endpoint.</p>
 <p>Finally, add the webhook.</p>
-<h3 id="push-changes-to-github-to-trigger-local-jenkins-pipeline">Push changes to Github to Trigger Local Jenkins Pipeline</h3>
+<h3 id="9-push-changes-to-github-to-trigger-local-jenkins-pipeline">9. Push changes to Github to Trigger Local Jenkins Pipeline</h3>
 <p>Before triggering the job via push to Github, I had to trigger it once manually otherwise pipeline is not triggered. I could not
 find a description for it but I guess plugin checks the local difference of the repository with the changes it 
 received but it needs an initial pull of the repo to the local. So first build it manually once:</p>
@@ -798,12 +796,12 @@ Hello World from localhost
 [Pipeline] End of Pipeline
 Finished: SUCCESS
 </code></pre>
-<h3 id="summary">Summary</h3>
+<h3 id="10-summary">10. Summary</h3>
 <p>In this post, we made the integration of local Jenkins using Docker containers to the Github. Also, we saw how to create 
 a job, add a Github credential, configure your pipeline with Jenkinsfile, add a webhook from your repository to your Jenkins.</p>
 <p>You can find source code of this project in 
 <a href="https://github.com/cmlonder/github-integration-with-local-jenkins" target="_blank" rel="noopener">Github</a></p>
-<h3 id="resources">Resources</h3>
+<h3 id="11-resources">11. Resources</h3>
 <ul>
 <li>
 <a href="">https://www.jenkins.io/doc/book/pipeline/jenkinsfile/</a></li>

@@ -5,7 +5,7 @@
     <link>http://cemalonder.com/post/</link>
       <atom:link href="http://cemalonder.com/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 17 Jul 2020 01:11:38 +0300</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 17 Jul 2020 02:04:07 +0300</lastBuildDate>
     <image>
       <url>http://cemalonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
@@ -13,11 +13,19 @@
     </image>
     
     <item>
+      <title>Spring Boot Kafka TutorialdIn</title>
+      <link>http://cemalonder.com/post/spring-boot-kafka-tutorialdin/</link>
+      <pubDate>Fri, 17 Jul 2020 02:04:07 +0300</pubDate>
+      <guid>http://cemalonder.com/post/spring-boot-kafka-tutorialdin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Spring Boot Kafka Tutorial</title>
       <link>http://cemalonder.com/post/spring-boot-kafka-tutorial/</link>
       <pubDate>Fri, 17 Jul 2020 01:11:38 +0300</pubDate>
       <guid>http://cemalonder.com/post/spring-boot-kafka-tutorial/</guid>
-      <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
+      <description>&lt;h3 id=&#34;1-overview&#34;&gt;1. Overview&lt;/h3&gt;
 &lt;p&gt;Apache Kafka is a distributed streaming platform that is used to send data between applications in real-time. It is 
 good to have an overview of some Kafka terminology before going further;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Topic:&lt;/strong&gt; Messages are published to&lt;/p&gt;
@@ -31,7 +39,7 @@ This allows applications to communicate asynchronously and fulfill high payloads
 A new score is made in our virtual football game.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Consumer:&lt;/strong&gt; There will be 2 consumers. Radio and TV. They will consume our message and use it their business logic. 
 This will show us how we can get the benefit of the publisher/subscriber system.&lt;/p&gt;
-&lt;h3 id=&#34;application-setup&#34;&gt;Application Setup&lt;/h3&gt;
+&lt;h3 id=&#34;2-application-setup&#34;&gt;2. Application Setup&lt;/h3&gt;
 &lt;p&gt;We need to prepare our environment by running Apache Kafka and its dependency on ZooKeeper. Kafka provides a simple 
 ZooKeeper server for local purposes, but in production, it should be configured separately. Let&amp;rsquo;s stick with basics in our tutorial:&lt;/p&gt;
 &lt;ul&gt;
@@ -42,7 +50,7 @@ ZooKeeper server for local purposes, but in production, it should be configured 
 &lt;pre&gt;&lt;code&gt;tar -xzf kafka_2.12-2.5.0.tgz
 cd kafka_2.12-2.5.0
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;start-zookeeper-server&#34;&gt;Start ZooKeeper Server&lt;/h4&gt;
+&lt;h4 id=&#34;21-start-zookeeper-server&#34;&gt;2.1. Start ZooKeeper Server&lt;/h4&gt;
 &lt;p&gt;Kafka uses the ZooKeeper server to manage its topics. Start it:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Linux&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;./bin/zookeeper-server-start.sh config/zookeeper.properties
@@ -50,7 +58,7 @@ cd kafka_2.12-2.5.0
 &lt;p&gt;&lt;strong&gt;Windows&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;start-kafka-server&#34;&gt;Start Kafka Server&lt;/h4&gt;
+&lt;h4 id=&#34;22-start-kafka-server&#34;&gt;2.2. Start Kafka Server&lt;/h4&gt;
 &lt;p&gt;Start kafka server after ZooKeeper is up &amp;amp; ready:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Linux&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;./bin/kafka-server-start.sh config/server.properties
@@ -58,7 +66,7 @@ cd kafka_2.12-2.5.0
 &lt;p&gt;&lt;strong&gt;Windows&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;.\bin\windows\kafka-server-start.bat .\config\server.properties
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;create-a-topic&#34;&gt;Create a topic&lt;/h4&gt;
+&lt;h4 id=&#34;23-create-a-topic&#34;&gt;2.3. Create a topic&lt;/h4&gt;
 &lt;p&gt;For simplicity, we are going to create a topic before our application is started. Create games topic with the following:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Linux&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;.\bin \kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic scores
@@ -66,7 +74,7 @@ cd kafka_2.12-2.5.0
 &lt;p&gt;&lt;strong&gt;Windows&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;.\bin\windows\kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic scores
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;list-topics&#34;&gt;List topics&lt;/h4&gt;
+&lt;h4 id=&#34;24-list-topics&#34;&gt;2.4. List topics&lt;/h4&gt;
 &lt;p&gt;List topics in the Kafka, we will see scores topic is created.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Linux&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;.\bin\kafka-topics.bat –list –bootstrap-server localhost:9092
@@ -74,7 +82,7 @@ cd kafka_2.12-2.5.0
 &lt;p&gt;&lt;strong&gt;Windows&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;create-the-project&#34;&gt;Create the Project&lt;/h4&gt;
+&lt;h4 id=&#34;25-create-the-project&#34;&gt;2.5. Create the Project&lt;/h4&gt;
 &lt;p&gt;Now we can start creating our application. We need the following dependencies:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;spring-boot-starter:&lt;/strong&gt; Provides our core Spring libraries.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;spring-boot-starter-web:&lt;/strong&gt; We need it to provide a simple web server and REST operations&lt;/p&gt;
@@ -149,7 +157,7 @@ cd kafka_2.12-2.5.0
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Or you can also use Spring Initializr to generate above pom.xml quickly with the following selections:
 &lt;img src=&#34;spring-initialzr.png&#34; alt=&#34;spring initalizr&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;application-configuration&#34;&gt;Application Configuration&lt;/h3&gt;
+&lt;h3 id=&#34;3-application-configuration&#34;&gt;3. Application Configuration&lt;/h3&gt;
 &lt;p&gt;We need to configure our application.yml/properties with the following:&lt;/p&gt;
 &lt;p&gt;By default, our Kafka server started on port 9092 when we run in our terminal. We will use the default port and 
 Serializer/Deserializer provided by Kafka. We configure our application to run on port 9000 and as the last step we 
@@ -170,7 +178,7 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;create-a-controller&#34;&gt;Create a Controller&lt;/h3&gt;
+&lt;h3 id=&#34;4-create-a-controller&#34;&gt;4. Create a Controller&lt;/h3&gt;
 &lt;p&gt;We provide /games/score endpoint with the name request param. This controller then delegates its job to Scores class with incoming name.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;@RestController
 @RequestMapping(value = &amp;quot;/games&amp;quot;)
@@ -190,7 +198,7 @@ public class GameController {
 
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;create-a-producer&#34;&gt;Create a Producer&lt;/h3&gt;
+&lt;h3 id=&#34;5-create-a-producer&#34;&gt;5. Create a Producer&lt;/h3&gt;
 &lt;p&gt;Create producer package and Scores file inside it as following:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;@Service
 public class Scores {
@@ -216,9 +224,9 @@ public class Scores {
 easily send messages to the given topic, since our class is already in Spring Context we can use Autowired annotation 
 in our constructor and inject KafkaTemplate to our class.  Then we are calling KafkaTemplate’s send method with the 
 score topic we already created and message for the topic.&lt;/p&gt;
-&lt;h3 id=&#34;create-consumers&#34;&gt;Create Consumers&lt;/h3&gt;
+&lt;h3 id=&#34;6-create-consumers&#34;&gt;6. Create Consumers&lt;/h3&gt;
 &lt;p&gt;We will create two Consumers for the score topic. First, create consumers package and TvConsumer class in it as follows:&lt;/p&gt;
-&lt;h4 id=&#34;first-consumer-tv&#34;&gt;First Consumer: TV&lt;/h4&gt;
+&lt;h4 id=&#34;61-first-consumer-tv&#34;&gt;6.1. First Consumer: TV&lt;/h4&gt;
 &lt;p&gt;This class is annotated with Service annotation and its now inside Spring Context similar to the provider above. 
 We are using KafkaListener annotation provided by spring-kafka to listen given topic. It is listening to players&amp;rsquo; 
 topics with its unique groupId which is the tv in this case. By giving different groupId’s, multiple consumers can listen to the same topic. 
@@ -236,7 +244,7 @@ public class TvConsumer {
 
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;second-consumer-radio&#34;&gt;Second Consumer: Radio&lt;/h4&gt;
+&lt;h4 id=&#34;62-second-consumer-radio&#34;&gt;6.2. Second Consumer: Radio&lt;/h4&gt;
 &lt;p&gt;Similar to the TvConsumer, RadioConsumer listens to players&amp;rsquo; topic with its groupId and logs its special message.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;@Service
 public class RadioConsumer {
@@ -252,7 +260,7 @@ public class RadioConsumer {
 
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;send-a-message-to-topic&#34;&gt;Send a Message To Topic&lt;/h3&gt;
+&lt;h3 id=&#34;7-send-a-message-to-topic&#34;&gt;7. Send a Message To Topic&lt;/h3&gt;
 &lt;p&gt;Now let&amp;rsquo;s try to send a message to the topic using basic curl:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;curl -X POST localhost:9000/games/score?name=&amp;quot;Ronaldo&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
@@ -261,7 +269,7 @@ public class RadioConsumer {
 c.c.t.s.consumer.RadioConsumer: Ronaldo is scored a new goal!. Score is now 1-0 for the people who 
 c.c.t.s.consumer.TvConsumer: Ronaldo is scored a new goal!. This is outstanding to watch on TV. Score now 1 - 0!
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+&lt;h3 id=&#34;8-summary&#34;&gt;8. Summary&lt;/h3&gt;
 &lt;p&gt;In this post, we created kafka topic, send messages via a producer and retrieve them via multiple consumers from same
 topic using Spring Boot Kafka libraries.&lt;/p&gt;
 &lt;p&gt;You can find source code of this project in 
@@ -274,7 +282,7 @@ topic using Spring Boot Kafka libraries.&lt;/p&gt;
       <link>http://cemalonder.com/post/github-integration-with-local-jenkins/</link>
       <pubDate>Thu, 16 Jul 2020 00:56:17 +0300</pubDate>
       <guid>http://cemalonder.com/post/github-integration-with-local-jenkins/</guid>
-      <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
+      <description>&lt;h3 id=&#34;1-overview&#34;&gt;1. Overview&lt;/h3&gt;
 &lt;p&gt;Sometimes it is very beneficial to have your own Jenkins:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;You have a ready Jenkins in your company but you are just learning Jenkins and you are pushing every little change
@@ -288,7 +296,7 @@ are using Jenkins locally since &lt;strong&gt;Github can not access your localho
 you own where this is not always possible.&lt;/p&gt;
 &lt;p&gt;In this article, we are going to set up everything from scratch with a basic &amp;amp; quick way and &lt;strong&gt;we will integrate Github with
 locally running Jenkins.&lt;/strong&gt;&lt;/p&gt;
-&lt;h3 id=&#34;install-jenkins-with-docker&#34;&gt;Install Jenkins with Docker&lt;/h3&gt;
+&lt;h3 id=&#34;2-install-jenkins-with-docker&#34;&gt;2. Install Jenkins with Docker&lt;/h3&gt;
 &lt;p&gt;Docker is the easiest way to start using Jenkins. Here are the steps for downloading the docker image, starting a new container
 and setting up Jenkins:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; Start local Jenkins by running following command:&lt;/p&gt;
@@ -307,7 +315,7 @@ where we are going to use it in the next steps.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;create_admin.png&#34; alt=&#34;create admin&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;5.&lt;/strong&gt; Finish the installation by applying the default URL since we will keep using localhost.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;installation_finish.png&#34; alt=&#34;finish installation&#34;&gt;&lt;/p&gt;
-&lt;h3 id=&#34;create-a-project-in-github&#34;&gt;Create a Project in Github&lt;/h3&gt;
+&lt;h3 id=&#34;3-create-a-project-in-github&#34;&gt;3. Create a Project in Github&lt;/h3&gt;
 &lt;p&gt;You may already have a project, for the tutorial purpose let&amp;rsquo;s also create a new fresh project &lt;strong&gt;Github-integration-with-local-jenkins&lt;/strong&gt;
 which is located 
 &lt;a href=&#34;https://github.com/cmlonder/github-integration-with-local-jenkins&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
@@ -324,7 +332,7 @@ which is located
     }
 }
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;create-an-access-token-in-github&#34;&gt;Create an Access Token in Github&lt;/h3&gt;
+&lt;h3 id=&#34;4-create-an-access-token-in-github&#34;&gt;4. Create an Access Token in Github&lt;/h3&gt;
 &lt;p&gt;Jenkins will try to reach Github for a bunch of operations where it will need some access token. Let&amp;rsquo;s create this token:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; Click on your profile icon then select &lt;strong&gt;Settings&lt;/strong&gt; from the dropdown then select &lt;strong&gt;Developer Settings&lt;/strong&gt; from the
 left navigation panel&lt;/p&gt;
@@ -337,7 +345,7 @@ Select them, give them a note, and generate the token.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;4.&lt;/strong&gt; Don&amp;rsquo;t forget to &lt;strong&gt;TAKE NOT&lt;/strong&gt; of this generated token since you will not able to see it again.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;access_token.png&#34; alt=&#34;access token&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Now we are ready to create a job in Jenkins. We will use this token while configuring Github in the Jenkins.&lt;/p&gt;
-&lt;h3 id=&#34;configure-github-server-in-jenkins&#34;&gt;Configure Github Server in Jenkins&lt;/h3&gt;
+&lt;h3 id=&#34;5-configure-github-server-in-jenkins&#34;&gt;5. Configure Github Server in Jenkins&lt;/h3&gt;
 &lt;p&gt;Before creating a new job, let&amp;rsquo;s add the token we generated in Github to our Jenkins.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; Go to Jenkins Home and click on &lt;strong&gt;Manage Jenkins&lt;/strong&gt; then select &lt;strong&gt;Configure System&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;manage_jenkins.png&#34; alt=&#34;manage jenkins&#34;&gt;&lt;/p&gt;
@@ -356,7 +364,7 @@ A response should appear on the screen which shows remaining API limits for your
 API rate limit information, but it is enough for learning purposes.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;save_github_server.png&#34; alt=&#34;save Github server&#34;&gt;&lt;/p&gt;
 &lt;p&gt;We successfully added a credential to access Github APIs. Let&amp;rsquo;s continue with creating a new job.&lt;/p&gt;
-&lt;h3 id=&#34;create-a-new-job&#34;&gt;Create a New Job&lt;/h3&gt;
+&lt;h3 id=&#34;6-create-a-new-job&#34;&gt;6. Create a New Job&lt;/h3&gt;
 &lt;p&gt;We need to create a job in Jenkins by setting up our project URL and giving Github access so that Jenkins can fetch our
 project to build it within our pipeline. Let&amp;rsquo;s set it up step by step&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; Click on create a new item
@@ -370,7 +378,7 @@ project to build it within our pipeline. Let&amp;rsquo;s set it up step by step&
 &lt;p&gt;&lt;strong&gt;4.&lt;/strong&gt; Click on &lt;strong&gt;Pipeline&lt;/strong&gt; and select &lt;strong&gt;Pipeline script from SCM&lt;/strong&gt; from Definition dropdown. This configures Jenkins 
 job that we will use instructions from our project&amp;rsquo;s  Jenkinsfile to run the pipeline. Enter your
 &lt;em&gt;&amp;hellip;git&lt;/em&gt; repository URL.&lt;/p&gt;
-&lt;h3 id=&#34;expose-your-localhost-with-ngrok&#34;&gt;Expose Your Localhost with NGROK&lt;/h3&gt;
+&lt;h3 id=&#34;7-expose-your-localhost-with-ngrok&#34;&gt;7. Expose Your Localhost with NGROK&lt;/h3&gt;
 &lt;p&gt;As mentioned at the beginning of the article, we need a way to Github to communicate with our local running Jenkins. There is a way
 for it; exposing your local with a tunnel to the web. &lt;strong&gt;NGROK&lt;/strong&gt; is the easiest way for this which makes it available with
 a simple command. But it &lt;strong&gt;SHOULD NOT&lt;/strong&gt; be used for production purposes.&lt;/p&gt;
@@ -384,7 +392,7 @@ the exposed URL like following in your terminal:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;ngrok.png&#34; alt=&#34;ngrok&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Copy the Http forwarding URL and paste it to your browser, you will be redirected to your local Jenkins server. We are ready
 to go to the next step, configuring Github for webhooks with Jenkins.&lt;/p&gt;
-&lt;h3 id=&#34;configure-webhook-url-for-your-project-in-github&#34;&gt;Configure Webhook URL for your Project in Github&lt;/h3&gt;
+&lt;h3 id=&#34;8-configure-webhook-url-for-your-project-in-github&#34;&gt;8. Configure Webhook URL for your Project in Github&lt;/h3&gt;
 &lt;p&gt;Go to your project page and click on &lt;strong&gt;Settings&lt;/strong&gt; tab. Then click &lt;strong&gt;Webhooks&lt;/strong&gt; from the left navigation panel and
 click on &lt;strong&gt;Add webhook&lt;/strong&gt;. Now you should see the following screen:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;add_webhook.png&#34; alt=&#34;add webhook&#34;&gt;&lt;/p&gt;
@@ -397,7 +405,7 @@ for &lt;strong&gt;POST&lt;/strong&gt; requests)&lt;/p&gt;
 to configure detailed hooks, select &lt;strong&gt;Let me select individual events&lt;/strong&gt; and then you can pick the events like Pull Requests, Pushes,
 Releases etc. to trigger calling your Jenkins endpoint.&lt;/p&gt;
 &lt;p&gt;Finally, add the webhook.&lt;/p&gt;
-&lt;h3 id=&#34;push-changes-to-github-to-trigger-local-jenkins-pipeline&#34;&gt;Push changes to Github to Trigger Local Jenkins Pipeline&lt;/h3&gt;
+&lt;h3 id=&#34;9-push-changes-to-github-to-trigger-local-jenkins-pipeline&#34;&gt;9. Push changes to Github to Trigger Local Jenkins Pipeline&lt;/h3&gt;
 &lt;p&gt;Before triggering the job via push to Github, I had to trigger it once manually otherwise pipeline is not triggered. I could not
 find a description for it but I guess plugin checks the local difference of the repository with the changes it 
 received but it needs an initial pull of the repo to the local. So first build it manually once:&lt;/p&gt;
@@ -432,12 +440,12 @@ Hello World from localhost
 [Pipeline] End of Pipeline
 Finished: SUCCESS
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+&lt;h3 id=&#34;10-summary&#34;&gt;10. Summary&lt;/h3&gt;
 &lt;p&gt;In this post, we made the integration of local Jenkins using Docker containers to the Github. Also, we saw how to create 
 a job, add a Github credential, configure your pipeline with Jenkinsfile, add a webhook from your repository to your Jenkins.&lt;/p&gt;
 &lt;p&gt;You can find source code of this project in 
 &lt;a href=&#34;https://github.com/cmlonder/github-integration-with-local-jenkins&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;resources&#34;&gt;Resources&lt;/h3&gt;
+&lt;h3 id=&#34;11-resources&#34;&gt;11. Resources&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;a href=&#34;&#34;&gt;https://www.jenkins.io/doc/book/pipeline/jenkinsfile/&lt;/a&gt;&lt;/li&gt;
@@ -451,10 +459,11 @@ a job, add a Github credential, configure your pipeline with Jenkinsfile, add a 
       <pubDate>Sun, 12 Jul 2020 01:28:56 +0300</pubDate>
       <guid>http://cemalonder.com/post/go-sonar-integration-using-docker-part-1/</guid>
       <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
-&lt;p&gt;In this series, I&amp;rsquo;m going to integrate a Go project with Sonar using Docker.
+&lt;p&gt;In this series, we are going to integrate a Go project with Sonar using Docker.
 
-&lt;a href=&#34;http://cemalonder.com/post/go-sonar-integration-using-docker-part-1&#34;&gt;Part 1&lt;/a&gt; will be about creating a go application, writing unit tests, and generating code coverage then sending this
-report to SonarQube.
+&lt;a href=&#34;http://cemalonder.com/post/go-sonar-integration-using-docker-part-1&#34;&gt;Part 1&lt;/a&gt; will be about creating a go application, writing unit tests, 
+and generating code coverage then sending this report to SonarQube.
+
 &lt;a href=&#34;&#34;&gt;Part 2 - TBD&lt;/a&gt; will be about using Sonar to fail pipeline based on the Quality report.&lt;/p&gt;
 &lt;h3 id=&#34;1-create-a-simple-todo-app&#34;&gt;1. Create a Simple Todo App&lt;/h3&gt;
 &lt;p&gt;Let&amp;rsquo;s first create an empty project and initialize go modules.&lt;/p&gt;
