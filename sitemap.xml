@@ -19,26 +19,56 @@
   
   <url>
     <loc>http://cemalonder.com/authors/</loc>
-    <lastmod>2020-07-12T01:28:56+03:00</lastmod>
+    <lastmod>2020-07-16T00:56:17+03:00</lastmod>
   </url>
   
   <url>
     <loc>http://cemalonder.com/categories/</loc>
-    <lastmod>2020-07-12T01:28:56+03:00</lastmod>
+    <lastmod>2020-07-16T00:56:17+03:00</lastmod>
   </url>
   
   <url>
     <loc>http://cemalonder.com/author/cemal-onder/</loc>
-    <lastmod>2020-07-12T01:28:56+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://cemalonder.com/category/code-quality/</loc>
-    <lastmod>2020-07-12T01:28:56+03:00</lastmod>
+    <lastmod>2020-07-16T00:56:17+03:00</lastmod>
   </url>
   
   <url>
     <loc>http://cemalonder.com/category/continuous-integration/</loc>
+    <lastmod>2020-07-16T00:56:17+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://cemalonder.com/tag/github/</loc>
+    <lastmod>2020-07-16T00:56:17+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://cemalonder.com/post/github-integration-with-local-jenkins/</loc>
+    <lastmod>2020-07-16T00:56:17+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://cemalonder.com/category/integration/</loc>
+    <lastmod>2020-07-16T00:56:17+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://cemalonder.com/tag/jenkins/</loc>
+    <lastmod>2020-07-16T00:56:17+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://cemalonder.com/post/</loc>
+    <lastmod>2020-07-16T00:56:17+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://cemalonder.com/tags/</loc>
+    <lastmod>2020-07-16T00:56:17+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://cemalonder.com/category/code-quality/</loc>
     <lastmod>2020-07-12T01:28:56+03:00</lastmod>
   </url>
   
@@ -58,17 +88,7 @@
   </url>
   
   <url>
-    <loc>http://cemalonder.com/post/</loc>
-    <lastmod>2020-07-12T01:28:56+03:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://cemalonder.com/tag/sonar/</loc>
-    <lastmod>2020-07-12T01:28:56+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://cemalonder.com/tags/</loc>
     <lastmod>2020-07-12T01:28:56+03:00</lastmod>
   </url>
   
@@ -175,11 +195,6 @@
   
   <url>
     <loc>http://cemalonder.com/tag/deep-learning/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://cemalonder.com/tag/github/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
