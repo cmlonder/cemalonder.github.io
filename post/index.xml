@@ -5,20 +5,12 @@
     <link>http://cemalonder.com/post/</link>
       <atom:link href="http://cemalonder.com/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 17 Jul 2020 02:04:07 +0300</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 17 Jul 2020 01:11:38 +0300</lastBuildDate>
     <image>
       <url>http://cemalonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
       <link>http://cemalonder.com/post/</link>
     </image>
-    
-    <item>
-      <title>Spring Boot Kafka TutorialdIn</title>
-      <link>http://cemalonder.com/post/spring-boot-kafka-tutorialdin/</link>
-      <pubDate>Fri, 17 Jul 2020 02:04:07 +0300</pubDate>
-      <guid>http://cemalonder.com/post/spring-boot-kafka-tutorialdin/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Spring Boot Kafka Tutorial</title>
