@@ -649,7 +649,7 @@ and generating code coverage then sending this report to SonarQube.
 <p>Let&rsquo;s first create an empty project and initialize go modules.</p>
 <pre><code>mkdir go-dockerized-coverage
 cd go-dockerized-coverage
-go mod init cemalonder.com/go/todo
+go mod init cmlonder.com/go/todo
 </code></pre>
 <p>Create a todo folder and todo.go file</p>
 <pre><code>mkdir todo
@@ -760,12 +760,12 @@ continue with generating code coverage.</p>
 <a href="https://golang.org/pkg/cmd/go/internal/test/" target="_blank" rel="noopener">here</a></p>
 <p>Now we have a coverage.out generated in the root of the project content like this:</p>
 <pre><code> mode: count
-  cemalonder.com/go/todo/main.go:3.14,4.2 0 0
-  cemalonder.com/go/todo/todo/todo.go:20.30,25.2 4 2
-  cemalonder.com/go/todo/todo/todo.go:28.44,32.2 3 1
-  cemalonder.com/go/todo/todo/todo.go:36.44,37.35 1 2
-  cemalonder.com/go/todo/todo/todo.go:37.35,41.3 3 1
-  cemalonder.com/go/todo/todo/todo.go:41.8,43.3 1 1
+  cmlonder.com/go/todo/main.go:3.14,4.2 0 0
+  cmlonder.com/go/todo/todo/todo.go:20.30,25.2 4 2
+  cmlonder.com/go/todo/todo/todo.go:28.44,32.2 3 1
+  cmlonder.com/go/todo/todo/todo.go:36.44,37.35 1 2
+  cmlonder.com/go/todo/todo/todo.go:37.35,41.3 3 1
+  cmlonder.com/go/todo/todo/todo.go:41.8,43.3 1 1
 </code></pre>
 <p>The next step is sending this coverage to Sonar so we can visualize it.</p>
 <h3 id="4-start-local-sonarqube">4. Start Local SonarQube</h3>
