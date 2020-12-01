@@ -3,261 +3,261 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://cemalonder.com/courses/example/</loc>
+    <loc>http://cmlonder.com/courses/example/</loc>
     <lastmod>2018-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/talk/example/</loc>
+    <loc>http://cmlonder.com/talk/example/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/talk/</loc>
+    <loc>http://cmlonder.com/talk/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/authors/</loc>
+    <loc>http://cmlonder.com/authors/</loc>
     <lastmod>2020-07-17T01:11:38+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/categories/</loc>
+    <loc>http://cmlonder.com/categories/</loc>
     <lastmod>2020-07-17T01:11:38+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/author/cemal-onder/</loc>
+    <loc>http://cmlonder.com/author/cemal-onder/</loc>
     <lastmod>2020-07-17T01:11:38+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/category/integration/</loc>
+    <loc>http://cmlonder.com/category/integration/</loc>
     <lastmod>2020-07-17T01:11:38+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/tag/kafka/</loc>
+    <loc>http://cmlonder.com/tag/kafka/</loc>
     <lastmod>2020-07-17T01:11:38+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/post/</loc>
+    <loc>http://cmlonder.com/post/</loc>
     <lastmod>2020-07-17T01:11:38+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/tag/spring-boot/</loc>
+    <loc>http://cmlonder.com/tag/spring-boot/</loc>
     <lastmod>2020-07-17T01:11:38+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/post/spring-boot-kafka-tutorial/</loc>
+    <loc>http://cmlonder.com/post/spring-boot-kafka-tutorial/</loc>
     <lastmod>2020-07-17T01:11:38+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/tags/</loc>
+    <loc>http://cmlonder.com/tags/</loc>
     <lastmod>2020-07-17T01:11:38+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/category/continuous-integration/</loc>
+    <loc>http://cmlonder.com/category/continuous-integration/</loc>
     <lastmod>2020-07-16T00:56:17+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/tag/github/</loc>
+    <loc>http://cmlonder.com/tag/github/</loc>
     <lastmod>2020-07-16T00:56:17+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/post/github-integration-with-local-jenkins/</loc>
+    <loc>http://cmlonder.com/post/github-integration-with-local-jenkins/</loc>
     <lastmod>2020-07-16T00:56:17+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/tag/jenkins/</loc>
+    <loc>http://cmlonder.com/tag/jenkins/</loc>
     <lastmod>2020-07-16T00:56:17+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/category/code-quality/</loc>
+    <loc>http://cmlonder.com/category/code-quality/</loc>
     <lastmod>2020-07-12T01:28:56+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/tag/docker/</loc>
+    <loc>http://cmlonder.com/tag/docker/</loc>
     <lastmod>2020-07-12T01:28:56+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/tag/go/</loc>
+    <loc>http://cmlonder.com/tag/go/</loc>
     <lastmod>2020-07-12T01:28:56+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/post/go-sonar-integration-using-docker-part-1/</loc>
+    <loc>http://cmlonder.com/post/go-sonar-integration-using-docker-part-1/</loc>
     <lastmod>2020-07-12T01:28:56+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/tag/sonar/</loc>
+    <loc>http://cmlonder.com/tag/sonar/</loc>
     <lastmod>2020-07-12T01:28:56+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/tag/clean-code/</loc>
+    <loc>http://cmlonder.com/tag/clean-code/</loc>
     <lastmod>2020-01-13T07:14:38+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/category/software-principles/</loc>
+    <loc>http://cmlonder.com/category/software-principles/</loc>
     <lastmod>2020-01-13T07:14:38+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/post/welcome-back-clean-code/welcome-back-clean-code/</loc>
+    <loc>http://cmlonder.com/post/welcome-back-clean-code/welcome-back-clean-code/</loc>
     <lastmod>2020-01-13T07:14:38+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/post/5-layer-and-5-tier-architecture/</loc>
+    <loc>http://cmlonder.com/post/5-layer-and-5-tier-architecture/</loc>
     <lastmod>2019-09-14T08:17:57+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/category/architecture/</loc>
+    <loc>http://cmlonder.com/category/architecture/</loc>
     <lastmod>2019-09-14T08:17:57+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/tag/multitier-architecture/</loc>
+    <loc>http://cmlonder.com/tag/multitier-architecture/</loc>
     <lastmod>2019-09-14T08:17:57+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/tag/n-tier/</loc>
+    <loc>http://cmlonder.com/tag/n-tier/</loc>
     <lastmod>2019-09-14T08:17:57+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/tag/software-layers/</loc>
+    <loc>http://cmlonder.com/tag/software-layers/</loc>
     <lastmod>2019-09-14T08:17:57+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/publication-type/3/</loc>
+    <loc>http://cmlonder.com/publication-type/3/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/publication/preprint/</loc>
+    <loc>http://cmlonder.com/publication/preprint/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/publication_types/</loc>
+    <loc>http://cmlonder.com/publication_types/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/publication/</loc>
+    <loc>http://cmlonder.com/publication/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/tag/source-themes/</loc>
+    <loc>http://cmlonder.com/tag/source-themes/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/slides/</loc>
+    <loc>http://cmlonder.com/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/slides/example/</loc>
+    <loc>http://cmlonder.com/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/courses/</loc>
+    <loc>http://cmlonder.com/courses/</loc>
     <lastmod>2018-09-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/</loc>
+    <loc>http://cmlonder.com/</loc>
     <lastmod>2018-06-28T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/privacy/</loc>
+    <loc>http://cmlonder.com/privacy/</loc>
     <lastmod>2018-06-28T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/terms/</loc>
+    <loc>http://cmlonder.com/terms/</loc>
     <lastmod>2018-06-28T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/project/botcv-website-source/</loc>
+    <loc>http://cmlonder.com/project/botcv-website-source/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/tag/deep-learning/</loc>
+    <loc>http://cmlonder.com/tag/deep-learning/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/project/internal-project/</loc>
+    <loc>http://cmlonder.com/project/internal-project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/project/</loc>
+    <loc>http://cmlonder.com/project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/publication-type/2/</loc>
+    <loc>http://cmlonder.com/publication-type/2/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/publication/journal-article/</loc>
+    <loc>http://cmlonder.com/publication/journal-article/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/author/robert-ford/</loc>
+    <loc>http://cmlonder.com/author/robert-ford/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/publication-type/1/</loc>
+    <loc>http://cmlonder.com/publication-type/1/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/publication/conference-paper/</loc>
+    <loc>http://cmlonder.com/publication/conference-paper/</loc>
     <lastmod>2013-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/about/</loc>
+    <loc>http://cmlonder.com/about/</loc>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/courses/example/example1/</loc>
+    <loc>http://cmlonder.com/courses/example/example1/</loc>
   </url>
   
   <url>
-    <loc>http://cemalonder.com/courses/example/example2/</loc>
+    <loc>http://cmlonder.com/courses/example/example2/</loc>
   </url>
   
 </urlset>

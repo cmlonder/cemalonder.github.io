@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>jenkins | Cemal Önder</title>
-    <link>http://cemalonder.com/tag/jenkins/</link>
-      <atom:link href="http://cemalonder.com/tag/jenkins/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://cmlonder.com/tag/jenkins/</link>
+      <atom:link href="http://cmlonder.com/tag/jenkins/index.xml" rel="self" type="application/rss+xml" />
     <description>jenkins</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 16 Jul 2020 00:56:17 +0300</lastBuildDate>
     <image>
-      <url>http://cemalonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>http://cmlonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>jenkins</title>
-      <link>http://cemalonder.com/tag/jenkins/</link>
+      <link>http://cmlonder.com/tag/jenkins/</link>
     </image>
     
     <item>
       <title>Github Integration With Local Jenkins</title>
-      <link>http://cemalonder.com/post/github-integration-with-local-jenkins/</link>
+      <link>http://cmlonder.com/post/github-integration-with-local-jenkins/</link>
       <pubDate>Thu, 16 Jul 2020 00:56:17 +0300</pubDate>
-      <guid>http://cemalonder.com/post/github-integration-with-local-jenkins/</guid>
+      <guid>http://cmlonder.com/post/github-integration-with-local-jenkins/</guid>
       <description>&lt;h3 id=&#34;1-overview&#34;&gt;1. Overview&lt;/h3&gt;
 &lt;p&gt;Sometimes it is very beneficial to have your own Jenkins:&lt;/p&gt;
 &lt;ul&gt;

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>software layers | Cemal Önder</title>
-    <link>http://cemalonder.com/tag/software-layers/</link>
-      <atom:link href="http://cemalonder.com/tag/software-layers/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://cmlonder.com/tag/software-layers/</link>
+      <atom:link href="http://cmlonder.com/tag/software-layers/index.xml" rel="self" type="application/rss+xml" />
     <description>software layers</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 13 Sep 2019 08:37:57 +0300</lastBuildDate>
     <image>
-      <url>http://cemalonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>http://cmlonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>software layers</title>
-      <link>http://cemalonder.com/tag/software-layers/</link>
+      <link>http://cmlonder.com/tag/software-layers/</link>
     </image>
     
     <item>
       <title>5 Layer and 5 Tier Architecture</title>
-      <link>http://cemalonder.com/post/5-layer-and-5-tier-architecture/</link>
+      <link>http://cmlonder.com/post/5-layer-and-5-tier-architecture/</link>
       <pubDate>Fri, 13 Sep 2019 08:37:57 +0300</pubDate>
-      <guid>http://cemalonder.com/post/5-layer-and-5-tier-architecture/</guid>
+      <guid>http://cmlonder.com/post/5-layer-and-5-tier-architecture/</guid>
       <description>&lt;p&gt;There are differences between N-layer and N-tier definitions. We can start with explaining those first:&lt;/p&gt;
 &lt;h2 id=&#34;5-layer-architecture&#34;&gt;5-layer Architecture&lt;/h2&gt;
 &lt;p&gt;Layering is logical separation that you implement in your application. It has a relation with N-Tier but we will
