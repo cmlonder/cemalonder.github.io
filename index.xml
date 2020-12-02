@@ -114,7 +114,7 @@ cd kafka_2.12-2.5.0
       &amp;lt;version&amp;gt;2.2.6.RELEASE&amp;lt;/version&amp;gt;
       &amp;lt;relativePath/&amp;gt; &amp;lt;!-- lookup parent from repository --&amp;gt;
    &amp;lt;/parent&amp;gt;
-   &amp;lt;groupId&amp;gt;com.cemalonder.tutorials&amp;lt;/groupId&amp;gt;
+   &amp;lt;groupId&amp;gt;com.cmlonder.tutorials&amp;lt;/groupId&amp;gt;
    &amp;lt;artifactId&amp;gt;spring-boot-kafka-tutorial&amp;lt;/artifactId&amp;gt;
    &amp;lt;version&amp;gt;0.0.1-SNAPSHOT&amp;lt;/version&amp;gt;
    &amp;lt;name&amp;gt;spring-boot-kafka-tutorial&amp;lt;/name&amp;gt;
