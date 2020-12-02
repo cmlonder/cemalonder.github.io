@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sonar | Cemal Önder</title>
-    <link>http://cmlonder.com/tag/sonar/</link>
-      <atom:link href="http://cmlonder.com/tag/sonar/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.cmlonder.com/tag/sonar/</link>
+      <atom:link href="https://www.cmlonder.com/tag/sonar/index.xml" rel="self" type="application/rss+xml" />
     <description>sonar</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 12 Jul 2020 01:28:56 +0300</lastBuildDate>
     <image>
-      <url>http://cmlonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.cmlonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>sonar</title>
-      <link>http://cmlonder.com/tag/sonar/</link>
+      <link>https://www.cmlonder.com/tag/sonar/</link>
     </image>
     
     <item>
       <title>Go Sonar Integration Using Docker - Part 1</title>
-      <link>http://cmlonder.com/post/go-sonar-integration-using-docker-part-1/</link>
+      <link>https://www.cmlonder.com/post/go-sonar-integration-using-docker-part-1/</link>
       <pubDate>Sun, 12 Jul 2020 01:28:56 +0300</pubDate>
-      <guid>http://cmlonder.com/post/go-sonar-integration-using-docker-part-1/</guid>
+      <guid>https://www.cmlonder.com/post/go-sonar-integration-using-docker-part-1/</guid>
       <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
 &lt;p&gt;In this series, we are going to integrate a Go project with Sonar using Docker.
 
-&lt;a href=&#34;http://cmlonder.com/post/go-sonar-integration-using-docker-part-1&#34;&gt;Part 1&lt;/a&gt; will be about creating a go application, writing unit tests, 
+&lt;a href=&#34;https://www.cmlonder.com/post/go-sonar-integration-using-docker-part-1&#34;&gt;Part 1&lt;/a&gt; will be about creating a go application, writing unit tests, 
 and generating code coverage then sending this report to SonarQube.
 
 &lt;a href=&#34;&#34;&gt;Part 2 - TBD&lt;/a&gt; will be about using Sonar to fail pipeline based on the Quality report.&lt;/p&gt;

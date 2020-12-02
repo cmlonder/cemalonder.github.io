@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>github | Cemal Önder</title>
-    <link>http://cmlonder.com/tag/github/</link>
-      <atom:link href="http://cmlonder.com/tag/github/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.cmlonder.com/tag/github/</link>
+      <atom:link href="https://www.cmlonder.com/tag/github/index.xml" rel="self" type="application/rss+xml" />
     <description>github</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 16 Jul 2020 00:56:17 +0300</lastBuildDate>
     <image>
-      <url>http://cmlonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.cmlonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>github</title>
-      <link>http://cmlonder.com/tag/github/</link>
+      <link>https://www.cmlonder.com/tag/github/</link>
     </image>
     
     <item>
       <title>Github Integration With Local Jenkins</title>
-      <link>http://cmlonder.com/post/github-integration-with-local-jenkins/</link>
+      <link>https://www.cmlonder.com/post/github-integration-with-local-jenkins/</link>
       <pubDate>Thu, 16 Jul 2020 00:56:17 +0300</pubDate>
-      <guid>http://cmlonder.com/post/github-integration-with-local-jenkins/</guid>
+      <guid>https://www.cmlonder.com/post/github-integration-with-local-jenkins/</guid>
       <description>&lt;h3 id=&#34;1-overview&#34;&gt;1. Overview&lt;/h3&gt;
 &lt;p&gt;Sometimes it is very beneficial to have your own Jenkins:&lt;/p&gt;
 &lt;ul&gt;
@@ -190,9 +190,9 @@ a job, add a Github credential, configure your pipeline with Jenkinsfile, add a 
     
     <item>
       <title>BotCV Website Source</title>
-      <link>http://cmlonder.com/project/botcv-website-source/</link>
+      <link>https://www.cmlonder.com/project/botcv-website-source/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>http://cmlonder.com/project/botcv-website-source/</guid>
+      <guid>https://www.cmlonder.com/project/botcv-website-source/</guid>
       <description></description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>architecture | Cemal Önder</title>
-    <link>http://cmlonder.com/category/architecture/</link>
-      <atom:link href="http://cmlonder.com/category/architecture/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.cmlonder.com/category/architecture/</link>
+      <atom:link href="https://www.cmlonder.com/category/architecture/index.xml" rel="self" type="application/rss+xml" />
     <description>architecture</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 13 Sep 2019 08:37:57 +0300</lastBuildDate>
     <image>
-      <url>http://cmlonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.cmlonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>architecture</title>
-      <link>http://cmlonder.com/category/architecture/</link>
+      <link>https://www.cmlonder.com/category/architecture/</link>
     </image>
     
     <item>
       <title>5 Layer and 5 Tier Architecture</title>
-      <link>http://cmlonder.com/post/5-layer-and-5-tier-architecture/</link>
+      <link>https://www.cmlonder.com/post/5-layer-and-5-tier-architecture/</link>
       <pubDate>Fri, 13 Sep 2019 08:37:57 +0300</pubDate>
-      <guid>http://cmlonder.com/post/5-layer-and-5-tier-architecture/</guid>
+      <guid>https://www.cmlonder.com/post/5-layer-and-5-tier-architecture/</guid>
       <description>&lt;p&gt;There are differences between N-layer and N-tier definitions. We can start with explaining those first:&lt;/p&gt;
 &lt;h2 id=&#34;5-layer-architecture&#34;&gt;5-layer Architecture&lt;/h2&gt;
 &lt;p&gt;Layering is logical separation that you implement in your application. It has a relation with N-Tier but we will
