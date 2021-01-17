@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Package Manager | Cemal Önder</title>
+    <link>https://www.cmlonder.com/books/developer-essentials/package-manager/</link>
+      <atom:link href="https://www.cmlonder.com/books/developer-essentials/package-manager/index.xml" rel="self" type="application/rss+xml" />
+    <description>Package Manager</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>https://www.cmlonder.com/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Package Manager</title>
+      <link>https://www.cmlonder.com/books/developer-essentials/package-manager/</link>
+    </image>
+    
+    <item>
+      <title>HomeBrew</title>
+      <link>https://www.cmlonder.com/books/developer-essentials/package-manager/homebrew/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cmlonder.com/books/developer-essentials/package-manager/homebrew/</guid>
+      <description>&lt;p&gt;We will use HomeBrew throughout this book. Install it by following the instructions &lt;a href=&#34;https://brew.sh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. You can also
+use this page as a cheatsheet reference for usefull commands.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Search available versions of a package, e.g: openjdk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;breaw search openjdk
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;==&amp;gt; Casks
+adoptopenjdk                     adoptopenjdk11-openj9            adoptopenjdk12-openj9-large
+adoptopenjdk-jre                 adoptopenjdk11-openj9-jre        adoptopenjdk13 ✔
+adoptopenjdk-openj9              adoptopenjdk11-openj9-jre-large  adoptopenjdk13-jre
+adoptopenjdk-openj9-jre          adoptopenjdk11-openj9-large      adoptopenjdk13-openj9
+adoptopenjdk-openj9-jre-large    adoptopenjdk12                   adoptopenjdk13-openj9-jre
+adoptopenjdk-openj9-large        adoptopenjdk12-jre               adoptopenjdk13-openj9-jre-large
+adoptopenjdk10                   adoptopenjdk12-openj9            adoptopenjdk13-openj9-large
+adoptopenjdk11                   adoptopenjdk12-openj9-jre        adoptopenjdk14
+adoptopenjdk11-jre               adoptopenjdk12-openj9-jre-large  adoptopenjdk14-jre 
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

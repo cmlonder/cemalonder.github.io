@@ -13,19 +13,21 @@
     </image>
     
     <item>
-      <title></title>
+      <title>Overview</title>
       <link>https://www.cmlonder.com/courses/example/example1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
       <guid>https://www.cmlonder.com/courses/example/example1/</guid>
-      <description></description>
+      <description>&lt;p&gt;hey&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title></title>
+      <title>Overview</title>
       <link>https://www.cmlonder.com/courses/example/example2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
       <guid>https://www.cmlonder.com/courses/example/example2/</guid>
-      <description></description>
+      <description>&lt;p&gt;hey 2&lt;/p&gt;
+</description>
     </item>
     
   </channel>

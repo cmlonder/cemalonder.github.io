@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview2 | Cemal Önder</title>
+    <link>https://www.cmlonder.com/courses/example2/</link>
+      <atom:link href="https://www.cmlonder.com/courses/example2/index.xml" rel="self" type="application/rss+xml" />
+    <description>Overview2</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 09 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://www.cmlonder.com/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
+      <title>Overview2</title>
+      <link>https://www.cmlonder.com/courses/example2/</link>
+    </image>
+    
+    <item>
+      <title>Overview</title>
+      <link>https://www.cmlonder.com/courses/example2/example1/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.cmlonder.com/courses/example2/example1/</guid>
+      <description>&lt;p&gt;hey3&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>https://www.cmlonder.com/courses/example2/example2/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.cmlonder.com/courses/example2/example2/</guid>
+      <description>&lt;p&gt;hey 4&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

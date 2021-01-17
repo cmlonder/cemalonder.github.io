@@ -8,6 +8,51 @@
   </url>
   
   <url>
+    <loc>https://www.cmlonder.com/courses/example2/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.cmlonder.com/books/developer-essentials/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.cmlonder.com/courses/example/example1/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.cmlonder.com/courses/example2/example1/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.cmlonder.com/courses/example/example2/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.cmlonder.com/courses/example2/example2/</loc>
+    <lastmod>2018-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.cmlonder.com/books/developer-essentials/package-manager/homebrew/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.cmlonder.com/books/developer-essentials/language-versions/multiple-jdk-locally/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.cmlonder.com/books/developer-essentials/package-manager/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.cmlonder.com/books/developer-essentials/language-versions/</loc>
+  </url>
+  
+  <url>
     <loc>https://www.cmlonder.com/</loc>
     <lastmod>2030-06-01T13:00:00+00:00</lastmod>
   </url>
@@ -253,11 +298,8 @@
   </url>
   
   <url>
-    <loc>https://www.cmlonder.com/courses/example/example1/</loc>
-  </url>
-  
-  <url>
-    <loc>https://www.cmlonder.com/courses/example/example2/</loc>
+    <loc>https://www.cmlonder.com/books/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>

@@ -13,6 +13,259 @@
     </image>
     
     <item>
+      <title>Overview</title>
+      <link>https://www.cmlonder.com/courses/example/example1/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.cmlonder.com/courses/example/example1/</guid>
+      <description>&lt;p&gt;hey&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>https://www.cmlonder.com/courses/example2/example1/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.cmlonder.com/courses/example2/example1/</guid>
+      <description>&lt;p&gt;hey3&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>https://www.cmlonder.com/courses/example/example2/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.cmlonder.com/courses/example/example2/</guid>
+      <description>&lt;p&gt;hey 2&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Overview</title>
+      <link>https://www.cmlonder.com/courses/example2/example2/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://www.cmlonder.com/courses/example2/example2/</guid>
+      <description>&lt;p&gt;hey 4&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>HomeBrew</title>
+      <link>https://www.cmlonder.com/books/developer-essentials/package-manager/homebrew/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cmlonder.com/books/developer-essentials/package-manager/homebrew/</guid>
+      <description>&lt;p&gt;We will use HomeBrew throughout this book. Install it by following the instructions &lt;a href=&#34;https://brew.sh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. You can also
+use this page as a cheatsheet reference for usefull commands.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Search available versions of a package, e.g: openjdk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;breaw search openjdk
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;==&amp;gt; Casks
+adoptopenjdk                     adoptopenjdk11-openj9            adoptopenjdk12-openj9-large
+adoptopenjdk-jre                 adoptopenjdk11-openj9-jre        adoptopenjdk13 ✔
+adoptopenjdk-openj9              adoptopenjdk11-openj9-jre-large  adoptopenjdk13-jre
+adoptopenjdk-openj9-jre          adoptopenjdk11-openj9-large      adoptopenjdk13-openj9
+adoptopenjdk-openj9-jre-large    adoptopenjdk12                   adoptopenjdk13-openj9-jre
+adoptopenjdk-openj9-large        adoptopenjdk12-jre               adoptopenjdk13-openj9-jre-large
+adoptopenjdk10                   adoptopenjdk12-openj9            adoptopenjdk13-openj9-large
+adoptopenjdk11                   adoptopenjdk12-openj9-jre        adoptopenjdk14
+adoptopenjdk11-jre               adoptopenjdk12-openj9-jre-large  adoptopenjdk14-jre 
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Multiple JDK Locally</title>
+      <link>https://www.cmlonder.com/books/developer-essentials/language-versions/multiple-jdk-locally/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.cmlonder.com/books/developer-essentials/language-versions/multiple-jdk-locally/</guid>
+      <description>&lt;p&gt;In this tutorial we are going to install and configure Jenv to manage multiple JDK versions in Mac OS.&lt;/p&gt;
+&lt;p&gt;At the end you will;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;easily change your global java version&lt;/li&gt;
+&lt;li&gt;use different java version rather than global java version in any folder&lt;/li&gt;
+&lt;li&gt;configure the maven so it also uses the local/global version you set&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;prerequisite&#34;&gt;Prerequisite&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Homebrew&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;install-multiple-jdk&#34;&gt;Install Multiple JDK&lt;/h2&gt;
+&lt;p&gt;Before we install the Jenv, we need to have multiple JDK versions installed in our local.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can search for available openjdk with:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;brew search openjdk
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;==&amp;gt; Formulae
+openjdk ✔                                              openjdk@11 ✔                                           openjdk@8
+==&amp;gt; Casks
+adoptopenjdk                     adoptopenjdk11-openj9            adoptopenjdk12-openj9-large      adoptopenjdk14-openj9            adoptopenjdk15-openj9-large
+adoptopenjdk-jre                 adoptopenjdk11-openj9-jre        adoptopenjdk13 ✔                 adoptopenjdk14-openj9-jre        adoptopenjdk8
+adoptopenjdk-openj9              adoptopenjdk11-openj9-jre-large  adoptopenjdk13-jre               adoptopenjdk14-openj9-jre-large  adoptopenjdk8
+adoptopenjdk-openj9-jre          adoptopenjdk11-openj9-large      adoptopenjdk13-openj9            adoptopenjdk14-openj9-large      adoptopenjdk8-jre
+adoptopenjdk-openj9-jre-large    adoptopenjdk12                   adoptopenjdk13-openj9-jre        adoptopenjdk15                   adoptopenjdk8-openj9
+adoptopenjdk-openj9-large        adoptopenjdk12-jre               adoptopenjdk13-openj9-jre-large  adoptopenjdk15-jre               adoptopenjdk8-openj9-jre
+adoptopenjdk10                   adoptopenjdk12-openj9            adoptopenjdk13-openj9-large      adoptopenjdk15-openj9            adoptopenjdk8-openj9-jre-large
+adoptopenjdk11                   adoptopenjdk12-openj9-jre        adoptopenjdk14                   adoptopenjdk15-openj9-jre        adoptopenjdk8-openj9-large
+adoptopenjdk11-jre               adoptopenjdk12-openj9-jre-large  adoptopenjdk14-jre               adoptopenjdk15-openj9-jre-large  adoptopenjdk9
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Install a chosen jdk (openjdk@11 in this case)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;brew install openjdk@11
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Make symlink link to jdk 11 location (brew also will guide you if you read it&amp;rsquo;s output in terminal)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;sudo ln -sfn /usr/local/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Install an another JDK (openjdk@15 in this case)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;brew install openjdk@15
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Make symlink link to jdk 15 location&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;sudo ln -sfn /usr/local/opt/openjdk@15/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-15.jdk
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;install-jenv&#34;&gt;Install Jenv&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Install Jenv using homebrew&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;brew install jenv
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Init jenv to set JAVA_HOME for you. If you run &lt;code&gt;echo $JAVA_HOME&lt;/code&gt; you will get no result
+(or maybe incorrect result if you have java before). We should configure jenv first, to get some help run:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;jenv doctor
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;which will give you the command you should run to configure jenv some required settings to your bash profile. Below is mine,
+&lt;strong&gt;check your terminal output&lt;/strong&gt; for yours:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;echo eval &amp;quot;$(jenv init -)&amp;quot; &amp;gt;&amp;gt; /Users/cemal.onder/.zshrc
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;add-java-homes-to-jenv&#34;&gt;Add Java Homes to Jenv&lt;/h2&gt;
+&lt;p&gt;We should now show our installed JDK home locations to jenv. For this either use your installed url&amp;rsquo;s in previous steps or
+type in your terminal &lt;code&gt;/Library/Java/JavaVirtualMachines/&lt;/code&gt; and hit the &lt;strong&gt;tab&lt;/strong&gt; to list available jdk versions. And use full
+path as &lt;code&gt; /Library/Java/JavaVirtualMachines/${YOUR_INSTALLED_VERSION/Contents/Home&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add JDK 11 home link to Jenv&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;jenv add /Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Add JDK 15 one also to Jenv&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;jenv add /Library/Java/JavaVirtualMachines/openjdk-15.jdk/Contents/Home
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Check your java versions in Jenv&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;jenv versions
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;      system
+    * 11 (set by /Users/cemal.onder/.jenv/version)
+      11.0
+      11.0.9
+      15
+      15.0
+      15.0.1
+      openjdk64-11.0.9
+      openjdk64-15.0.1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Point (*) next to &lt;strong&gt;11&lt;/strong&gt; shows my global JDK version.&lt;/p&gt;
+&lt;h2 id=&#34;change-global-jdk-version&#34;&gt;Change global JDK Version&lt;/h2&gt;
+&lt;p&gt;Now we can set a global JDK in our local using jenv which will change $JAVA_HOME version.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;First check your java version&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;cemal.onder@C02DM1Y9MD6R ~ % java --version
+openjdk 15.0.1 2020-10-20
+OpenJDK Runtime Environment (build 15.0.1+9)
+OpenJDK 64-Bit Server VM (build 15.0.1+9, mixed mode, sharing)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Change global java version&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;jenv global 11
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Now check java version again which is changed from 15 to 11&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;    cemal.onder@C02DM1Y9MD6R ~ % java --version
+    openjdk 11.0.9 2020-10-20
+    OpenJDK Runtime Environment (build 11.0.9+11)
+    OpenJDK 64-Bit Server VM (build 11.0.9+11, mixed mode)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;change-local-jdk-version&#34;&gt;Change local JDK Version&lt;/h2&gt;
+&lt;p&gt;Now in this case your local project requires to run with JDK 15 instead of globally set JDK 11. Use jenv local setup for this
+requirement as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Change into a directory, &lt;strong&gt;Documents&lt;/strong&gt; in my case.&lt;/li&gt;
+&lt;li&gt;Check java version, which will be 11 since we last set global one to 11.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;    cemal.onder@C02DM1Y9MD6R Documents % java --version
+    openjdk 11.0.9 2020-10-20
+    OpenJDK Runtime Environment (build 11.0.9+11)
+    OpenJDK 64-Bit Server VM (build 11.0.9+11, mixed mode)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Set local version to 15&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;jenv local 15
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Check your java version again&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;    cemal.onder@C02DM1Y9MD6R Documents % java --version
+    openjdk 15.0.1 2020-10-20
+    OpenJDK Runtime Environment (build 15.0.1+9)
+    OpenJDK 64-Bit Server VM (build 15.0.1+9, mixed mode, sharing)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Be aware of that a file with name &lt;strong&gt;.java-version&lt;/strong&gt; is created in your directory. You may want to add it to .gitignore of your
+project.&lt;/p&gt;
+&lt;h2 id=&#34;use-different-jdk-versions-with-maven&#34;&gt;Use different JDK versions with Maven&lt;/h2&gt;
+&lt;p&gt;By following similar approach we can set up different JDK versions globally or per project to use it with Maven.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Install maven&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;brew install maven
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Enable maven and export jenv plugins&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;jenv enable-plugin maven
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;jenv enable-plugin export
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Check your maven version&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;    cemal.onder@C02DM1Y9MD6R ~ % mvn --version
+    Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+    Maven home: /usr/local/Cellar/maven/3.6.3_1/libexec
+    Java version: 11.0.9
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Now change into a directory where you set another jdk version with jenv local. In this case I will change into my
+Documents directory which I setup before.&lt;/li&gt;
+&lt;li&gt;Check your maven version again&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;    cemal.onder@C02DM1Y9MD6R Documents % mvn --version
+    Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+    Maven home: /usr/local/Cellar/maven/3.6.3_1/libexec
+    Java version: 15.0.1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;resources&#34;&gt;Resources&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jenv.be/&#34;&gt;https://www.jenv.be/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Example Talk</title>
       <link>https://www.cmlonder.com/talk/example-talk/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
@@ -1639,22 +1892,6 @@ Service, please contact us by email &lt;a href=&#34;mailto:cemalonder1@gmail.com
       <link>https://www.cmlonder.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.cmlonder.com/about/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.cmlonder.com/courses/example/example1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.cmlonder.com/courses/example/example1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://www.cmlonder.com/courses/example/example2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.cmlonder.com/courses/example/example2/</guid>
       <description></description>
     </item>
     
