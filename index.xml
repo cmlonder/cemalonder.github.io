@@ -51,7 +51,7 @@
     <item>
       <title>HomeBrew</title>
       <link>https://www.cmlonder.com/books/developer-essentials/package-manager/homebrew/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://www.cmlonder.com/books/developer-essentials/package-manager/homebrew/</guid>
       <description>&lt;p&gt;We will use HomeBrew throughout this book. Install it by following the instructions &lt;a href=&#34;https://brew.sh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. You can also
 use this page as a cheatsheet reference for usefull commands.&lt;/p&gt;
@@ -77,7 +77,7 @@ adoptopenjdk11-jre               adoptopenjdk12-openj9-jre-large  adoptopenjdk14
     <item>
       <title>Multiple JDK Locally</title>
       <link>https://www.cmlonder.com/books/developer-essentials/language-versions/multiple-jdk-locally/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://www.cmlonder.com/books/developer-essentials/language-versions/multiple-jdk-locally/</guid>
       <description>&lt;p&gt;In this tutorial we are going to install and configure Jenv to manage multiple JDK versions in Mac OS.&lt;/p&gt;
 &lt;p&gt;At the end you will;&lt;/p&gt;

@@ -5,7 +5,7 @@
     <link>https://www.cmlonder.com/books/developer-essentials/language-versions/</link>
       <atom:link href="https://www.cmlonder.com/books/developer-essentials/language-versions/index.xml" rel="self" type="application/rss+xml" />
     <description>Language Versions</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 17 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://www.cmlonder.com/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>Language Versions</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Multiple JDK Locally</title>
       <link>https://www.cmlonder.com/books/developer-essentials/language-versions/multiple-jdk-locally/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://www.cmlonder.com/books/developer-essentials/language-versions/multiple-jdk-locally/</guid>
       <description>&lt;p&gt;In this tutorial we are going to install and configure Jenv to manage multiple JDK versions in Mac OS.&lt;/p&gt;
 &lt;p&gt;At the end you will;&lt;/p&gt;
