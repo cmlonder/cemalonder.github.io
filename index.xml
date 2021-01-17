@@ -5,7 +5,7 @@
     <link>https://www.cmlonder.com/</link>
       <atom:link href="https://www.cmlonder.com/index.xml" rel="self" type="application/rss+xml" />
     <description>Cemal Önder</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 28 Jun 2018 00:00:00 +0100</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
       <url>https://www.cmlonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Cemal Önder</title>
@@ -242,7 +242,7 @@ score topic we already created and message for the topic.&lt;/p&gt;
 &lt;p&gt;We will create two Consumers for the score topic. First, create consumers package and TvConsumer class in it as follows:&lt;/p&gt;
 &lt;h4 id=&#34;61-first-consumer-tv&#34;&gt;6.1. First Consumer: TV&lt;/h4&gt;
 &lt;p&gt;This class is annotated with Service annotation and its now inside Spring Context similar to the provider above. 
-We are using KafkaListener annotation provided by spring-kafka to listen given topic. It is listening to players&amp;rsquo; 
+We are using KafkaListener annotation provided by spring-kafka to listen given topic. It is listening to players&#39; 
 topics with its unique groupId which is the tv in this case. By giving different groupId’s, multiple consumers can listen to the same topic. 
 In the end, the TvConsumer class logs a simple message that shows it is handled by the TV.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;@Service
@@ -259,7 +259,7 @@ public class TvConsumer {
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h4 id=&#34;62-second-consumer-radio&#34;&gt;6.2. Second Consumer: Radio&lt;/h4&gt;
-&lt;p&gt;Similar to the TvConsumer, RadioConsumer listens to players&amp;rsquo; topic with its groupId and logs its special message.&lt;/p&gt;
+&lt;p&gt;Similar to the TvConsumer, RadioConsumer listens to players&#39; topic with its groupId and logs its special message.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;@Service
 public class RadioConsumer {
 
@@ -316,7 +316,7 @@ and setting up Jenkins:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; Start local Jenkins by running following command:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;docker run -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This creates a Jenkins on port 8080 with a volume &lt;strong&gt;jenkins_home&lt;/strong&gt; managed by docker. It is not suggested by Jenkins 
+&lt;p&gt;This creates a Jenkins on port 8080 with a volume &lt;strong&gt;jenkins_home&lt;/strong&gt; managed by docker. It is not suggested by Jenkins
 to map the volume to the host, so we will keep the volume in this way.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; There is an initial administrator password in our terminal when we run above command:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;jenkins_startup.png&#34; alt=&#34;jenkins startup&#34;&gt;&lt;/p&gt;
@@ -363,7 +363,7 @@ Select them, give them a note, and generate the token.&lt;/p&gt;
 &lt;p&gt;Before creating a new job, let&amp;rsquo;s add the token we generated in Github to our Jenkins.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; Go to Jenkins Home and click on &lt;strong&gt;Manage Jenkins&lt;/strong&gt; then select &lt;strong&gt;Configure System&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;manage_jenkins.png&#34; alt=&#34;manage jenkins&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; Scroll down to the Github section. Click on &lt;strong&gt;Add Github Server&lt;/strong&gt; then give it a name like &lt;strong&gt;github api&lt;/strong&gt;. Check 
+&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; Scroll down to the Github section. Click on &lt;strong&gt;Add Github Server&lt;/strong&gt; then give it a name like &lt;strong&gt;github api&lt;/strong&gt;. Check
 &lt;strong&gt;Manage hooks&lt;/strong&gt;. We need to enter our credentials for Github. We will use the token we generated in the previous step.
 Click on &lt;strong&gt;Add&lt;/strong&gt; and select &lt;strong&gt;Jenkins&lt;/strong&gt;
 &lt;img src=&#34;add_github_server.png&#34; alt=&#34;add github server&#34;&gt;&lt;/p&gt;
@@ -372,7 +372,7 @@ Enter your generated access token which you created in the previous step from Gi
 &lt;strong&gt;github access token&lt;/strong&gt; in this case) and add it.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;add_token.png&#34; alt=&#34;add token to jenkins&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;4.&lt;/strong&gt; As the last step, select the credential you created (github access token) in the popup and click on &lt;strong&gt;Test connection&lt;/strong&gt;.
-A response should appear on the screen which shows remaining API limits for your user. See 
+A response should appear on the screen which shows remaining API limits for your user. See
 
 &lt;a href=&#34;https://developer.github.com/apps/building-github-apps/understanding-rate-limits-for-github-apps/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; for Github
 API rate limit information, but it is enough for learning purposes.&lt;/p&gt;
@@ -389,7 +389,7 @@ project to build it within our pipeline. Let&amp;rsquo;s set it up step by step&
 &lt;p&gt;&lt;img src=&#34;new_pipeline.png&#34; alt=&#34;new job&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;3.&lt;/strong&gt; Now we should configure our job. Click (or scroll) to &lt;strong&gt;Build Triggers&lt;/strong&gt; section and check &lt;strong&gt;Github hook trigger for GITScm polling&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;configure_webhook.png&#34; alt=&#34;configure webhook&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;4.&lt;/strong&gt; Click on &lt;strong&gt;Pipeline&lt;/strong&gt; and select &lt;strong&gt;Pipeline script from SCM&lt;/strong&gt; from Definition dropdown. This configures Jenkins 
+&lt;p&gt;&lt;strong&gt;4.&lt;/strong&gt; Click on &lt;strong&gt;Pipeline&lt;/strong&gt; and select &lt;strong&gt;Pipeline script from SCM&lt;/strong&gt; from Definition dropdown. This configures Jenkins
 job that we will use instructions from our project&amp;rsquo;s  Jenkinsfile to run the pipeline. Enter your
 &lt;em&gt;&amp;hellip;git&lt;/em&gt; repository URL.&lt;/p&gt;
 &lt;h3 id=&#34;7-expose-your-localhost-with-ngrok&#34;&gt;7. Expose Your Localhost with NGROK&lt;/h3&gt;
@@ -410,7 +410,7 @@ to go to the next step, configuring Github for webhooks with Jenkins.&lt;/p&gt;
 &lt;p&gt;Go to your project page and click on &lt;strong&gt;Settings&lt;/strong&gt; tab. Then click &lt;strong&gt;Webhooks&lt;/strong&gt; from the left navigation panel and
 click on &lt;strong&gt;Add webhook&lt;/strong&gt;. Now you should see the following screen:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;add_webhook.png&#34; alt=&#34;add webhook&#34;&gt;&lt;/p&gt;
-&lt;p&gt;For the Payload URL you should add your ngrok URL from previous step + &lt;strong&gt;/github-webhook/&lt;/strong&gt; which 
+&lt;p&gt;For the Payload URL you should add your ngrok URL from previous step + &lt;strong&gt;/github-webhook/&lt;/strong&gt; which
 will be ${YOUR_NGROK_URL}&lt;strong&gt;/github-webhook/&lt;/strong&gt;. So my ngrok URL is: &lt;a href=&#34;http://d9cdfa47e311.ngrok.io&#34;&gt;http://d9cdfa47e311.ngrok.io&lt;/a&gt; then my
 Payload URL is &lt;strong&gt;&lt;a href=&#34;http://d9cdfa47e311.ngrok.io/github-webhook/&#34;&gt;http://d9cdfa47e311.ngrok.io/github-webhook/&lt;/a&gt;&lt;/strong&gt; Trailing Slash &lt;strong&gt;/&lt;/strong&gt; at the end is imported which may cause
 redirection problem if you don&amp;rsquo;t add. (Also you can&amp;rsquo;t trigger this URL in the browser since /github-webhook provided by Jenkins
@@ -421,7 +421,7 @@ Releases etc. to trigger calling your Jenkins endpoint.&lt;/p&gt;
 &lt;p&gt;Finally, add the webhook.&lt;/p&gt;
 &lt;h3 id=&#34;9-push-changes-to-github-to-trigger-local-jenkins-pipeline&#34;&gt;9. Push changes to Github to Trigger Local Jenkins Pipeline&lt;/h3&gt;
 &lt;p&gt;Before triggering the job via push to Github, I had to trigger it once manually otherwise pipeline is not triggered. I could not
-find a description for it but I guess plugin checks the local difference of the repository with the changes it 
+find a description for it but I guess plugin checks the local difference of the repository with the changes it
 received but it needs an initial pull of the repo to the local. So first build it manually once:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;build_initially.png&#34; alt=&#34;build manually&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Now let&amp;rsquo;s add a small change to the repo and push it. I changed my echo message from &lt;strong&gt;Hello World&lt;/strong&gt; to &lt;strong&gt;Hello World from localhost&lt;/strong&gt; and
@@ -455,7 +455,7 @@ Hello World from localhost
 Finished: SUCCESS
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;10-summary&#34;&gt;10. Summary&lt;/h3&gt;
-&lt;p&gt;In this post, we made the integration of local Jenkins using Docker containers to the Github. Also, we saw how to create 
+&lt;p&gt;In this post, we made the integration of local Jenkins using Docker containers to the Github. Also, we saw how to create
 a job, add a Github credential, configure your pipeline with Jenkinsfile, add a webhook from your repository to your Jenkins.&lt;/p&gt;
 &lt;p&gt;You can find source code of this project in 
 &lt;a href=&#34;https://github.com/cmlonder/github-integration-with-local-jenkins&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
@@ -1105,7 +1105,7 @@ Our guidance period.&lt;/li&gt;
 &lt;p&gt;We only share and disclose your information with the following third parties. We have classified the parties so that you
 It may be easy to understand the purpose of our data collection and processing practices. If we have processed it based on your data
 After you agree and wish to withdraw your consent, please contact us using the contact information provided in this section
-The title is &amp;ldquo;How do you contact us with this notice?&amp;quot;.&lt;/p&gt;
+The title is &amp;ldquo;How do you contact us with this notice?&amp;rdquo;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Web and Mobile Analytics&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Google Analytics&lt;/strong&gt;&lt;/li&gt;

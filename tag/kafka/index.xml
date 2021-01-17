@@ -220,7 +220,7 @@ score topic we already created and message for the topic.&lt;/p&gt;
 &lt;p&gt;We will create two Consumers for the score topic. First, create consumers package and TvConsumer class in it as follows:&lt;/p&gt;
 &lt;h4 id=&#34;61-first-consumer-tv&#34;&gt;6.1. First Consumer: TV&lt;/h4&gt;
 &lt;p&gt;This class is annotated with Service annotation and its now inside Spring Context similar to the provider above. 
-We are using KafkaListener annotation provided by spring-kafka to listen given topic. It is listening to players&amp;rsquo; 
+We are using KafkaListener annotation provided by spring-kafka to listen given topic. It is listening to players&#39; 
 topics with its unique groupId which is the tv in this case. By giving different groupId’s, multiple consumers can listen to the same topic. 
 In the end, the TvConsumer class logs a simple message that shows it is handled by the TV.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;@Service
@@ -237,7 +237,7 @@ public class TvConsumer {
 }
 &lt;/code&gt;&lt;/pre&gt;
 &lt;h4 id=&#34;62-second-consumer-radio&#34;&gt;6.2. Second Consumer: Radio&lt;/h4&gt;
-&lt;p&gt;Similar to the TvConsumer, RadioConsumer listens to players&amp;rsquo; topic with its groupId and logs its special message.&lt;/p&gt;
+&lt;p&gt;Similar to the TvConsumer, RadioConsumer listens to players&#39; topic with its groupId and logs its special message.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;@Service
 public class RadioConsumer {
 
