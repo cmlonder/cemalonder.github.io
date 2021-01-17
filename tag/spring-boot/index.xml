@@ -5,9 +5,9 @@
     <link>https://www.cmlonder.com/tag/spring-boot/</link>
       <atom:link href="https://www.cmlonder.com/tag/spring-boot/index.xml" rel="self" type="application/rss+xml" />
     <description>spring boot</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 17 Jul 2020 01:11:38 +0300</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 17 Jul 2020 01:11:38 +0300</lastBuildDate>
     <image>
-      <url>https://www.cmlonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.cmlonder.com/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>spring boot</title>
       <link>https://www.cmlonder.com/tag/spring-boot/</link>
     </image>
@@ -35,8 +35,7 @@ This will show us how we can get the benefit of the publisher/subscriber system.
 &lt;p&gt;We need to prepare our environment by running Apache Kafka and its dependency on ZooKeeper. Kafka provides a simple 
 ZooKeeper server for local purposes, but in production, it should be configured separately. Let&amp;rsquo;s stick with basics in our tutorial:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Download Apache Kafka 
-&lt;a href=&#34;https://kafka.apache.org/quickstart&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Download Apache Kafka &lt;a href=&#34;https://kafka.apache.org/quickstart&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Untar it:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;pre&gt;&lt;code&gt;tar -xzf kafka_2.12-2.5.0.tgz
@@ -264,8 +263,7 @@ c.c.t.s.consumer.TvConsumer: Ronaldo is scored a new goal!. This is outstanding 
 &lt;h3 id=&#34;8-summary&#34;&gt;8. Summary&lt;/h3&gt;
 &lt;p&gt;In this post, we created kafka topic, send messages via a producer and retrieve them via multiple consumers from same
 topic using Spring Boot Kafka libraries.&lt;/p&gt;
-&lt;p&gt;You can find source code of this project in 
-&lt;a href=&#34;https://github.com/cmlonder/spring-boot-kafka-tutorial&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can find source code of this project in &lt;a href=&#34;https://github.com/cmlonder/spring-boot-kafka-tutorial&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

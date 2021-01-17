@@ -5,9 +5,9 @@
     <link>https://www.cmlonder.com/tag/github/</link>
       <atom:link href="https://www.cmlonder.com/tag/github/index.xml" rel="self" type="application/rss+xml" />
     <description>github</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 16 Jul 2020 00:56:17 +0300</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 16 Jul 2020 00:56:17 +0300</lastBuildDate>
     <image>
-      <url>https://www.cmlonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.cmlonder.com/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>github</title>
       <link>https://www.cmlonder.com/tag/github/</link>
     </image>
@@ -52,8 +52,7 @@ where we are going to use it in the next steps.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;installation_finish.png&#34; alt=&#34;finish installation&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;3-create-a-project-in-github&#34;&gt;3. Create a Project in Github&lt;/h3&gt;
 &lt;p&gt;You may already have a project, for the tutorial purpose let&amp;rsquo;s also create a new fresh project &lt;strong&gt;Github-integration-with-local-jenkins&lt;/strong&gt;
-which is located 
-&lt;a href=&#34;https://github.com/cmlonder/github-integration-with-local-jenkins&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+which is located &lt;a href=&#34;https://github.com/cmlonder/github-integration-with-local-jenkins&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;And let&amp;rsquo;s add a simple Jenkinsfile to the root of the project which simply echos Hello World&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;pipeline {
     agent any
@@ -94,7 +93,6 @@ Enter your generated access token which you created in the previous step from Gi
 &lt;p&gt;&lt;img src=&#34;add_token.png&#34; alt=&#34;add token to jenkins&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;4.&lt;/strong&gt; As the last step, select the credential you created (github access token) in the popup and click on &lt;strong&gt;Test connection&lt;/strong&gt;.
 A response should appear on the screen which shows remaining API limits for your user. See
-
 &lt;a href=&#34;https://developer.github.com/apps/building-github-apps/understanding-rate-limits-for-github-apps/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; for Github
 API rate limit information, but it is enough for learning purposes.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;save_github_server.png&#34; alt=&#34;save Github server&#34;&gt;&lt;/p&gt;
@@ -105,7 +103,6 @@ project to build it within our pipeline. Let&amp;rsquo;s set it up step by step&
 &lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; Click on create a new item
 &lt;img src=&#34;new_item.png&#34; alt=&#34;new item&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; Select &lt;strong&gt;Pipeline&lt;/strong&gt; and give it a name
-
 &lt;a href=&#34;https://github.com/cmlonder/go-dockerized-coverage&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;new_pipeline.png&#34; alt=&#34;new job&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;3.&lt;/strong&gt; Now we should configure our job. Click (or scroll) to &lt;strong&gt;Build Triggers&lt;/strong&gt; section and check &lt;strong&gt;Github hook trigger for GITScm polling&lt;/strong&gt;.&lt;/p&gt;
@@ -117,8 +114,7 @@ job that we will use instructions from our project&amp;rsquo;s  Jenkinsfile to r
 &lt;p&gt;As mentioned at the beginning of the article, we need a way to Github to communicate with our local running Jenkins. There is a way
 for it; exposing your local with a tunnel to the web. &lt;strong&gt;NGROK&lt;/strong&gt; is the easiest way for this which makes it available with
 a simple command. But it &lt;strong&gt;SHOULD NOT&lt;/strong&gt; be used for production purposes.&lt;/p&gt;
-&lt;p&gt;First download ngrok for your operating system 
-&lt;a href=&#34;https://ngrok.com/download&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;First download ngrok for your operating system &lt;a href=&#34;https://ngrok.com/download&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Then type the following command in your terminal (if you did not add ngrok to PATH, cd into your ngrok download directory);&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;ngrok http 8080
 &lt;/code&gt;&lt;/pre&gt;
@@ -178,12 +174,10 @@ Finished: SUCCESS
 &lt;h3 id=&#34;10-summary&#34;&gt;10. Summary&lt;/h3&gt;
 &lt;p&gt;In this post, we made the integration of local Jenkins using Docker containers to the Github. Also, we saw how to create
 a job, add a Github credential, configure your pipeline with Jenkinsfile, add a webhook from your repository to your Jenkins.&lt;/p&gt;
-&lt;p&gt;You can find source code of this project in 
-&lt;a href=&#34;https://github.com/cmlonder/github-integration-with-local-jenkins&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can find source code of this project in &lt;a href=&#34;https://github.com/cmlonder/github-integration-with-local-jenkins&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;11-resources&#34;&gt;11. Resources&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;&#34;&gt;https://www.jenkins.io/doc/book/pipeline/jenkinsfile/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;&#34;&gt;https://www.jenkins.io/doc/book/pipeline/jenkinsfile/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

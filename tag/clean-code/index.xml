@@ -5,9 +5,9 @@
     <link>https://www.cmlonder.com/tag/clean-code/</link>
       <atom:link href="https://www.cmlonder.com/tag/clean-code/index.xml" rel="self" type="application/rss+xml" />
     <description>clean code</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 13 Jan 2020 07:14:38 +0300</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 13 Jan 2020 07:14:38 +0300</lastBuildDate>
     <image>
-      <url>https://www.cmlonder.com/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.cmlonder.com/images/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_2.png</url>
       <title>clean code</title>
       <link>https://www.cmlonder.com/tag/clean-code/</link>
     </image>
@@ -17,8 +17,7 @@
       <link>https://www.cmlonder.com/post/welcome-back-clean-code/welcome-back-clean-code/</link>
       <pubDate>Mon, 13 Jan 2020 07:14:38 +0300</pubDate>
       <guid>https://www.cmlonder.com/post/welcome-back-clean-code/welcome-back-clean-code/</guid>
-      <description>&lt;p&gt;I recently read an 
-&lt;a href=&#34;https://overreacted.io/goodbye-clean-code/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;article&lt;/a&gt; from Dan Abramov who is the creator of Redux.
+      <description>&lt;p&gt;I recently read an &lt;a href=&#34;https://overreacted.io/goodbye-clean-code/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;article&lt;/a&gt; from Dan Abramov who is the creator of Redux.
 Even if I agree his article point:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Don’t be a clean code zealot. Clean code is not a goal. It’s an attempt to make some sense out of the immense complexity of systems we’re dealing with.&lt;/p&gt;
@@ -57,8 +56,7 @@ some real results. But instead I read something like &amp;ldquo;special cases&am
 &lt;p&gt;As I said before, I know his point. But title, arguments he show and how article is being mentioned in twitter, reddit and
 lots of other social medias is dangerous. If you trust that who uses this article has deep knowledge in software principles,
 software architectures etc. than we don&amp;rsquo;t have any discussions here. When I start searching if there are some people thinking like me
-than I see this 
-&lt;a href=&#34;https://www.reddit.com/r/programming/comments/eng355/goodbye_clean_code/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;discussion&lt;/a&gt; on reddit and it
+than I see this &lt;a href=&#34;https://www.reddit.com/r/programming/comments/eng355/goodbye_clean_code/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;discussion&lt;/a&gt; on reddit and it
 pleased me that they exist.&lt;/p&gt;
 &lt;p&gt;If Dan wants to say &amp;ldquo;Great power comes with great responsibility&amp;rdquo;, I agree. But it is already mentioned by Stan Lee and can
 be applied in any area of our live with example real life scenarios. If we know all this kind of principles, we should be careful when &amp;amp; where to apply them.
