@@ -13,10 +13,10 @@
     </image>
     
     <item>
-      <title>Spring Boot Kafka Tutorial</title>
-      <link>https://www.cmlonder.com/post/spring-boot-kafka-tutorial/</link>
+      <title>Kafka Integration</title>
+      <link>https://www.cmlonder.com/tutorials/basic/springboot/spring-boot-kafka-tutorial/</link>
       <pubDate>Fri, 17 Jul 2020 01:11:38 +0300</pubDate>
-      <guid>https://www.cmlonder.com/post/spring-boot-kafka-tutorial/</guid>
+      <guid>https://www.cmlonder.com/tutorials/basic/springboot/spring-boot-kafka-tutorial/</guid>
       <description>&lt;h3 id=&#34;1-overview&#34;&gt;1. Overview&lt;/h3&gt;
 &lt;p&gt;Apache Kafka is a distributed streaming platform that is used to send data between applications in real-time. It is 
 good to have an overview of some Kafka terminology before going further;&lt;/p&gt;

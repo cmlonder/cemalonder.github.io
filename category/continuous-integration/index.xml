@@ -14,9 +14,9 @@
     
     <item>
       <title>Github Integration With Local Jenkins</title>
-      <link>https://www.cmlonder.com/post/github-integration-with-local-jenkins/</link>
+      <link>https://www.cmlonder.com/tutorials/integration/jenkins/github-integration-with-local-jenkins/</link>
       <pubDate>Thu, 16 Jul 2020 00:56:17 +0300</pubDate>
-      <guid>https://www.cmlonder.com/post/github-integration-with-local-jenkins/</guid>
+      <guid>https://www.cmlonder.com/tutorials/integration/jenkins/github-integration-with-local-jenkins/</guid>
       <description>&lt;h3 id=&#34;1-overview&#34;&gt;1. Overview&lt;/h3&gt;
 &lt;p&gt;Sometimes it is very beneficial to have your own Jenkins:&lt;/p&gt;
 &lt;ul&gt;
@@ -184,9 +184,9 @@ a job, add a Github credential, configure your pipeline with Jenkinsfile, add a 
     
     <item>
       <title>Go Sonar Integration Using Docker - Part 1</title>
-      <link>https://www.cmlonder.com/post/go-sonar-integration-using-docker-part-1/</link>
+      <link>https://www.cmlonder.com/tutorials/integration/sonarqube/go-sonar-integration-using-docker-part-1/</link>
       <pubDate>Sun, 12 Jul 2020 01:28:56 +0300</pubDate>
-      <guid>https://www.cmlonder.com/post/go-sonar-integration-using-docker-part-1/</guid>
+      <guid>https://www.cmlonder.com/tutorials/integration/sonarqube/go-sonar-integration-using-docker-part-1/</guid>
       <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
 &lt;p&gt;In this series, we are going to integrate a Go project with Sonar using Docker.
 &lt;a href=&#34;https://www.cmlonder.com/post/go-sonar-integration-using-docker-part-1&#34;&gt;Part 1&lt;/a&gt; will be about creating a go application, writing unit tests, 

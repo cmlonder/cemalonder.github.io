@@ -75,6 +75,14 @@ adoptopenjdk11-jre               adoptopenjdk12-openj9-jre-large  adoptopenjdk14
     </item>
     
     <item>
+      <title>Multi Clustered Couchbase with Multi Node Kubernetes Locally</title>
+      <link>https://www.cmlonder.com/tutorials/integration/couchbase/multi_cluster_kubernetes_couhbase_locally/</link>
+      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://www.cmlonder.com/tutorials/integration/couchbase/multi_cluster_kubernetes_couhbase_locally/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Multiple JDK Locally</title>
       <link>https://www.cmlonder.com/books/developer-essentials/language-versions/multiple-jdk-locally/</link>
       <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
@@ -286,10 +294,10 @@ Documents directory which I setup before.&lt;/li&gt;
     </item>
     
     <item>
-      <title>Spring Boot Kafka Tutorial</title>
-      <link>https://www.cmlonder.com/post/spring-boot-kafka-tutorial/</link>
+      <title>Kafka Integration</title>
+      <link>https://www.cmlonder.com/tutorials/basic/springboot/spring-boot-kafka-tutorial/</link>
       <pubDate>Fri, 17 Jul 2020 01:11:38 +0300</pubDate>
-      <guid>https://www.cmlonder.com/post/spring-boot-kafka-tutorial/</guid>
+      <guid>https://www.cmlonder.com/tutorials/basic/springboot/spring-boot-kafka-tutorial/</guid>
       <description>&lt;h3 id=&#34;1-overview&#34;&gt;1. Overview&lt;/h3&gt;
 &lt;p&gt;Apache Kafka is a distributed streaming platform that is used to send data between applications in real-time. It is 
 good to have an overview of some Kafka terminology before going further;&lt;/p&gt;
@@ -542,9 +550,9 @@ topic using Spring Boot Kafka libraries.&lt;/p&gt;
     
     <item>
       <title>Github Integration With Local Jenkins</title>
-      <link>https://www.cmlonder.com/post/github-integration-with-local-jenkins/</link>
+      <link>https://www.cmlonder.com/tutorials/integration/jenkins/github-integration-with-local-jenkins/</link>
       <pubDate>Thu, 16 Jul 2020 00:56:17 +0300</pubDate>
-      <guid>https://www.cmlonder.com/post/github-integration-with-local-jenkins/</guid>
+      <guid>https://www.cmlonder.com/tutorials/integration/jenkins/github-integration-with-local-jenkins/</guid>
       <description>&lt;h3 id=&#34;1-overview&#34;&gt;1. Overview&lt;/h3&gt;
 &lt;p&gt;Sometimes it is very beneficial to have your own Jenkins:&lt;/p&gt;
 &lt;ul&gt;
@@ -712,9 +720,9 @@ a job, add a Github credential, configure your pipeline with Jenkinsfile, add a 
     
     <item>
       <title>Go Sonar Integration Using Docker - Part 1</title>
-      <link>https://www.cmlonder.com/post/go-sonar-integration-using-docker-part-1/</link>
+      <link>https://www.cmlonder.com/tutorials/integration/sonarqube/go-sonar-integration-using-docker-part-1/</link>
       <pubDate>Sun, 12 Jul 2020 01:28:56 +0300</pubDate>
-      <guid>https://www.cmlonder.com/post/go-sonar-integration-using-docker-part-1/</guid>
+      <guid>https://www.cmlonder.com/tutorials/integration/sonarqube/go-sonar-integration-using-docker-part-1/</guid>
       <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;
 &lt;p&gt;In this series, we are going to integrate a Go project with Sonar using Docker.
 &lt;a href=&#34;https://www.cmlonder.com/post/go-sonar-integration-using-docker-part-1&#34;&gt;Part 1&lt;/a&gt; will be about creating a go application, writing unit tests, 

@@ -14,9 +14,9 @@
     
     <item>
       <title>Github Integration With Local Jenkins</title>
-      <link>https://www.cmlonder.com/post/github-integration-with-local-jenkins/</link>
+      <link>https://www.cmlonder.com/tutorials/integration/jenkins/github-integration-with-local-jenkins/</link>
       <pubDate>Thu, 16 Jul 2020 00:56:17 +0300</pubDate>
-      <guid>https://www.cmlonder.com/post/github-integration-with-local-jenkins/</guid>
+      <guid>https://www.cmlonder.com/tutorials/integration/jenkins/github-integration-with-local-jenkins/</guid>
       <description>&lt;h3 id=&#34;1-overview&#34;&gt;1. Overview&lt;/h3&gt;
 &lt;p&gt;Sometimes it is very beneficial to have your own Jenkins:&lt;/p&gt;
 &lt;ul&gt;

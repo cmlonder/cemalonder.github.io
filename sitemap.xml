@@ -3,7 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.cmlonder.com/tutorials/basic/</loc>
+    <lastmod>2021-01-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.cmlonder.com/tutorials/integration/couchbase/</loc>
+    <lastmod>2021-01-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.cmlonder.com/books/developer-essentials/</loc>
+    <lastmod>2021-01-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.cmlonder.com/tutorials/integration/</loc>
     <lastmod>2021-01-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -43,6 +58,11 @@
   </url>
   
   <url>
+    <loc>https://www.cmlonder.com/tutorials/integration/couchbase/multi_cluster_kubernetes_couhbase_locally/</loc>
+    <lastmod>2021-01-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.cmlonder.com/books/developer-essentials/language-versions/multiple-jdk-locally/</loc>
     <lastmod>2021-01-17T00:00:00+00:00</lastmod>
   </url>
@@ -53,7 +73,22 @@
   </url>
   
   <url>
+    <loc>https://www.cmlonder.com/tutorials/basic/springboot/</loc>
+    <lastmod>2021-01-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.cmlonder.com/tutorials/integration/jenkins/</loc>
+    <lastmod>2021-01-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.cmlonder.com/books/developer-essentials/language-versions/</loc>
+    <lastmod>2021-01-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.cmlonder.com/tutorials/integration/sonarqube/</loc>
     <lastmod>2021-01-17T00:00:00+00:00</lastmod>
   </url>
   
@@ -74,6 +109,12 @@
   
   <url>
     <loc>https://www.cmlonder.com/books/</loc>
+    <lastmod>2021-01-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cmlonder.com/tutorials/</loc>
     <lastmod>2021-01-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -104,17 +145,12 @@
   </url>
   
   <url>
-    <loc>https://www.cmlonder.com/post/</loc>
+    <loc>https://www.cmlonder.com/tutorials/basic/springboot/spring-boot-kafka-tutorial/</loc>
     <lastmod>2020-07-17T01:11:38+03:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.cmlonder.com/tag/spring-boot/</loc>
-    <lastmod>2020-07-17T01:11:38+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.cmlonder.com/post/spring-boot-kafka-tutorial/</loc>
     <lastmod>2020-07-17T01:11:38+03:00</lastmod>
   </url>
   
@@ -134,7 +170,7 @@
   </url>
   
   <url>
-    <loc>https://www.cmlonder.com/post/github-integration-with-local-jenkins/</loc>
+    <loc>https://www.cmlonder.com/tutorials/integration/jenkins/github-integration-with-local-jenkins/</loc>
     <lastmod>2020-07-16T00:56:17+03:00</lastmod>
   </url>
   
@@ -159,7 +195,7 @@
   </url>
   
   <url>
-    <loc>https://www.cmlonder.com/post/go-sonar-integration-using-docker-part-1/</loc>
+    <loc>https://www.cmlonder.com/tutorials/integration/sonarqube/go-sonar-integration-using-docker-part-1/</loc>
     <lastmod>2020-07-12T01:28:56+03:00</lastmod>
   </url>
   
@@ -170,6 +206,11 @@
   
   <url>
     <loc>https://www.cmlonder.com/tag/clean-code/</loc>
+    <lastmod>2020-01-13T07:14:38+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.cmlonder.com/post/</loc>
     <lastmod>2020-01-13T07:14:38+03:00</lastmod>
   </url>
   
